@@ -33,7 +33,7 @@ const router = createRouter({
       component: () => import('../views/MobilityView.vue')
     },
     {
-      path: '/work/',
+      path: '/work/calxurro',
       name: 'xurro',
       component: () => import('../views/XurroView.vue')
     },

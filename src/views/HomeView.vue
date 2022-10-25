@@ -19,7 +19,7 @@
       <h1>WORK</h1>
     </div>
       <transition-group name="swipe" tag="div" class="transition-container" id="carousel">
-        <img v-for="(picture, i) in pictures" :key="picture.src" :src="picture.src" alt="" class="image">
+        <img v-for="(picture) in pictures" :key="picture.src" :src="picture.src" alt="" class="image">
       <button class="previous" @click="previous"><i class="fa-sharp fa-solid fa-caret-left"></i></button>
       <button class="next" @click="next"><i class="fa-sharp fa-solid fa-caret-right"></i></button>
       </transition-group>
@@ -70,37 +70,6 @@ export default {
     }
   },
 
-  created() {
-    this.interval = setInterval(() => this.next(), 5000)
-  },
-
-  mounted() {
-    const myElement =
-    document.getElementById('carousel')
-  const that = this
-    const hammertime = new Hammer(myElement);
-    
-    hammertime.on('panend', function(ev) {
-      
-    if (ev.additionalEvent === 'panright') {
-      const lastSlide = that.pictures.pop()
-      that.pictures = [lastSlide].concat(that.pictures)
-    } else if (ev.additionalEvent === 'panleft') {
-      const firstPicture = that.pictures.shift()
-      that.pictures = that.pictures.concat(firstPicture)
-  }
-});
-  },
-  methods: {
-    previous() {
-      const lastSlide = this.pictures.pop()
-      this.pictures = [lastSlide].concat(this.pictures)
-    },
-    next() {
-      const firstPicture = this.pictures.shift()
-      this.pictures = this.pictures.concat(firstPicture)
-    }
-  }
 }
 </script>
 
