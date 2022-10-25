@@ -75,6 +75,12 @@ const errorMsg = ref("")
   border-radius: 15px;
   font-size: 30px;
   padding: 1rem;
+  border: none;
+}
+
+.box input:focus {
+  border: none;
+  outline: none;
 }
 
 
@@ -82,6 +88,11 @@ const errorMsg = ref("")
   border-radius: 15px;
   font-size: 30px;
   padding: 1rem;
+}
+
+.box textarea {
+  border: none;
+  outline: none;
 }
 
 .name-email {
