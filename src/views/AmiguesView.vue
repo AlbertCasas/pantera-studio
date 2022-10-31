@@ -61,12 +61,13 @@ import FooterComp from '../components/FooterComp.vue'
   .main-img {
     width: 100%;
     margin-bottom: 80px;
-    border-radius: 30px;
+    height: 100%;
   }
 
   .main-img img {
     width: 100%;
     border-radius: 30px;
+    object-fit: cover;
   }
 
   .info {

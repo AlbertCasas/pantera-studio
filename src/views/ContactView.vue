@@ -37,12 +37,38 @@
 import NavBar from '../components/NavBar.vue'
 import FooterComp from '../components/FooterComp.vue'
 import {ref} from 'vue'
+import projectFirestore from "../firebase/firebaseconfig"
 
 const name = ref("")
 const email = ref("")
 const subject = ref("")
 const message = ref("")
 const errorMsg = ref("")
+
+const sendMessage = () => {
+    if(name.value === "" || email.value === "" || subject.value === "" || message.value === ""){
+        errorMsg.value ="Please, complete the empty fields"
+        setTimeout(() => {
+            errorMsg.value = null
+        }, 5000)
+    }else{
+        const newMessage = {
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value
+        }
+        projectFirestore.collection('userMessages').add(newMessage)
+        errorMsg.value = "Thank you for your message!"
+        setTimeout(() => {
+            errorMsg.value = null
+        }, 5000)
+        name.value = "",
+        email.value = "",
+        subject.value = "",
+        message.value = ""
+    }
+}
 
 </script>
 
@@ -109,7 +135,9 @@ const errorMsg = ref("")
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  align-items: center;
   background-color: #0d0d0d;
+  gap: 30%;
 }
 
 .button {
@@ -123,6 +151,7 @@ const errorMsg = ref("")
   font-weight: 900;
   border-radius: 15px;
   justify-self: flex-end;
+  align-self: flex-end;
   cursor: pointer;
   border: 4px solid white;
 }
@@ -130,6 +159,12 @@ const errorMsg = ref("")
 .button:hover {
   border: 4px solid #E61933;
   color: #E61933;
+}
+
+.err-msg {
+  background-color: #0d0d0d;
+  color: white;
+  font-size: 30px;
 }
 
 .text {
