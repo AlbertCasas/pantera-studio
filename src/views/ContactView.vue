@@ -37,7 +37,7 @@
 import NavBar from '../components/NavBar.vue'
 import FooterComp from '../components/FooterComp.vue'
 import {ref} from 'vue'
-import projectFirestore from "../firebase/firebaseconfig"
+import projectFirestore from "../Firebase/Firebaseconfig"
 
 const name = ref("")
 const email = ref("")
