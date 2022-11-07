@@ -7,11 +7,13 @@
             <RouterLink class="button" to="/studio">STUDIO</RouterLink>
             <RouterLink class="button" to="/contact">CONTACT</RouterLink>
         </div>
+        <HamburgerMenu />
     </div>
   </div>
 </template>
 
 <script setup>
+import HamburgerMenu from './HamburgerMenu.vue'
 
 </script>
 
@@ -56,6 +58,12 @@
 
 .router-link-active {
     color: #E61933;
+}
+
+@media only screen and (max-width: 750px) {
+.navbar-buttons {
+    display: none;
+}
 }
 
 

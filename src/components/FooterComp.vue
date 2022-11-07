@@ -5,9 +5,11 @@
             <RouterLink class="button" to="/work">WORK</RouterLink>
             <RouterLink class="button" to="/studio">STUDIO</RouterLink>
             <RouterLink class="button" to="/contact">CONTACT</RouterLink>
-            <a href="https://www.instagram.com/_panterastudio/" target="_blank" class="icon"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.behance.net/panterastudio" target="_blank" class="icon"><i class="fa-brands fa-square-behance"></i></a>
-            <a href="https://www.linkedin.com/in/pantera-studio-89866423b/" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            <div class="icons">
+                <a href="https://www.instagram.com/_panterastudio/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.behance.net/panterastudio" target="_blank" class="icon"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://www.linkedin.com/in/pantera-studio-89866423b/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
         </div>
         <RouterLink class="pantera-logo" to="/"><img src="https://i.ibb.co/P4kVGGW/negativo.png" alt="pantera-logo"></RouterLink>
     </div>
@@ -67,11 +69,28 @@
 
 .icon {
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .icon i:hover {
     color: #E61933;
+}
+
+.icons {
+    display: flex;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 950px) {
+    .pantera-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .footer {
+        display: none;
+    }
 }
 
 

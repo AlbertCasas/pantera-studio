@@ -18,10 +18,14 @@
     <div class="work">
       <h1>WORK</h1>
     </div>
-    <div class="row">
-    <div class="row_posters" onscroll="getScrollVal()">
-      <div class="wrap">
-        <RouterLink class="router" to="/work/mobility">
+    <div class="carousel">
+      <swiper
+        :slidesPerView="1.5"
+        :modules="modules"
+        :breakpoints="swiperOptions.breakpoints"
+        class="mySwiper"
+      >
+        <swiper-slide class="s1"><RouterLink class="router mr" to="/work/mobility">
         <img class="router-img" src="https://i.ibb.co/5xCPn18/Recurso-83.png" alt="mobility-map">
         <div class="overlay">
           <div class="marquee">
@@ -45,37 +49,36 @@
             <h1>SUSTAINABLE MOBILITY MAP -</h1>
           </div>
         </div>
-        </RouterLink>
-      </div>
-      <div class="wrap">
-        <RouterLink class="router" to="/work/calxurro">
-        <img class="router-img" src="https://i.ibb.co/T26ttdW/Recurso-79.png" alt="cal-xurro">
-        <div class="overlay">
-          <div class="marquee">
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-            <h1>CAL XURRU -</h1>
-          </div>
-        </div>
-        </RouterLink>
-      </div>
-      <div class="wrap">
-        <RouterLink class="router" to="/work/mansamigues">
+      </RouterLink></swiper-slide>
+        <swiper-slide class="s2">
+          <RouterLink class="router mr" to="/work/calxurro">
+            <img class="router-img" src="https://i.ibb.co/T26ttdW/Recurso-79.png" alt="cal-xurro">
+            <div class="overlay">
+              <div class="marquee">
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+                <h1>CAL XURRU -</h1>
+              </div>
+            </div>
+          </RouterLink>
+        </swiper-slide>
+        <swiper-slide class="s2">
+          <RouterLink class="router mr" to="/work/mansamigues">
         <img class="router-img" src="https://i.ibb.co/y8J1nxj/Recurso-80.png" alt="mans-amigues">
         <div class="overlay">
           <div class="marquee">
@@ -99,10 +102,10 @@
             <h1>MANS AMIGUES -</h1>
           </div>
         </div>
-        </RouterLink>
-      </div>
-      <div class="wrap">
-        <RouterLink class="router" to="/work/cerealbox">
+      </RouterLink>
+        </swiper-slide>
+        <swiper-slide class="s2">
+          <RouterLink class="router mr" to="/work/cerealbox">
         <img class="router-img" src="https://i.ibb.co/tsnvN9L/Recurso-81.png" alt="cereal-box">
         <div class="overlay">
           <div class="marquee">
@@ -126,10 +129,10 @@
             <h1>MAGIC CEREAL -</h1>
           </div>
         </div>
-        </RouterLink>
-      </div>
-      <div class="wrap">
-        <RouterLink class="router r5" to="/work/breathe">
+      </RouterLink>
+        </swiper-slide>
+        <swiper-slide class="s2">
+          <RouterLink class="router mr" to="/work/breathe">
         <img class="router-img" src="https://i.ibb.co/Xj4JB7j/Recurso-59.png" alt="breathe">
         <div class="overlay">
           <div class="marquee">
@@ -154,9 +157,9 @@
           </div> 
         </div>
       </RouterLink>
-      </div>
-      <div class="wrap">
-        <RouterLink class="router r6" to="/work/pantera">
+        </swiper-slide>
+        <swiper-slide>
+          <RouterLink class="router " to="/work/pantera">
         <img class="router-img" src="https://i.ibb.co/Yh0cfVr/Recurso-82.png" alt="pantera-studio">
         <div class="overlay">
           <div class="marquee">
@@ -178,14 +181,10 @@
           </div>
         </div>
       </RouterLink>
-      </div>
-      <div class="left_arrow scroll_button arrow" @click="scrollL()">
-        <i class="fa-solid fa-caret-left"></i>      </div>
-      <div class="right_arrow scroll_button arrow" @click="scrollR()">
-        <i class="fa-sharp fa-solid fa-caret-right"></i>
-      </div>
+        </swiper-slide>
+      </swiper>
     </div>
-  </div>
+    
     <FooterComp />
   </section>
 </template>
@@ -193,38 +192,25 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
 import FooterComp from '../components/FooterComp.vue'
+import {Swiper, SwiperSlide} from 'swiper/vue'
+import "swiper/css";
+import "swiper/css/pagination";
 
-function scrollL() {
-  let x = document.getElementsByClassName("row_posters")[0];
-  let step = window.outerWidth / 2;
-  x.scrollLeft -= step;
-}
+const swiperOptions = {
+  breakpoints: {
+    
 
-function scrollR() {
-  let x = document.getElementsByClassName("row_posters")[0];
-  let step = window.outerWidth / 2;
-  x.scrollLeft += step;
-}
+    800: {
+      slidesPerView: 2.5
+    },
 
-function getScrollVal() {
-  setTimeout(() => {
-    let x = document.getElementsByClassName("row_posters")[0];
-    let el = document.getElementsByClassName("left_arrow")[0];
-    if (x.scrollLeft == 0) {
-      el.style.display = "none";
-    } else {
-      el.style.display = "flex";
+    1300: {
+      slidesPerView: 3.5
     }
-    let el2 = document.getElementsByClassName("right_arrow")[0];
-    let right = x.scrollWidth - (x.scrollLeft + x.clientWidth) + 1;
-    if (right <= 2) {
-      el2.style.display = "none";
-    } else {
-      el2.style.display = "flex";
-    }
-  }, 550);
+
+    
+  }
 }
-getScrollVal()
 
 
 </script>
@@ -329,118 +315,44 @@ h2 {
   margin: 0 7.3% 40px 7.3%;
 }
 
-.row {
-  margin-bottom: 80px;
-}
-
-
-.row_posters {
-  display: flex;
-  align-items: center;
-  overflow-x: scroll;
-  transition: 500ms;
-  scroll-behavior: smooth;
-  z-index: 1;
-}
-
-.row_posters::-webkit-scrollbar {
-  display: none;
-}
-
-.row_poster {
-  object-fit: contain;
-  height: 100%;
-}
-
-.wrap {
-  display: inline-block;
+.carousel {
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
   position: relative;
-  width: fit-content;
-  margin: 0 20px;
-  cursor: pointer;
-  transition: height 500ms;
-  border-radius: 30px;
+  margin: 0 7.3% 80px 7.3%;
+  z-index: 50;
 }
 
-.wrap img {
-  border-radius: 30px;
+.swiper {
+  width: 100%;
+  height: 100%;
+  
 }
 
-.wrap img:hover {
-  border-radius: 30px;
+.swiper-slide {
+  height: 100%;
+  
 }
 
-.poster_title {
-  font-family: "Cinzel", serif;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  color: #f0f0f0;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  transition: opacity 2000ms 1000ms;
-}
-.wrap:hover .poster_title {
-  opacity: 0;
-  transition: opacity 100ms;
-}
-
-.poster_info {
-  position: absolute;
-  left: 5px;
-  bottom: 50px;
-  font-weight: 300;
-  font-size: 0.75rem;
-  width: 250px;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: opacity 100ms;
-}
-.wrap:hover .poster_info {
-  opacity: 1;
-  transition: opacity 2000ms;
-}
-.poster_info p {
-  padding-top: 5px;
-}
-.scroll_button {
-  position: absolute;
-  height: 30%;
-  width: 43px;
-  background-color: #e3dcdc85;
+.router {
+  height: 100%;
+  position: relative;
+  /* Center slide text vertically */
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
+  margin-right: 40px;
 }
-.right_arrow {
-  right: 0px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 500ms;
-  z-index: 99;
-}
-.left_arrow {
-  left: 0px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 500ms;
-  z-index: 99;
-}
-.row_posters:hover .right_arrow {
-  opacity: 1;
-  visibility: visible;
-}
-.row_posters:hover .left_arrow {
-  opacity: 1;
-  visibility: visible;
-}
-.space {
-  min-width: 20px;
-}
-.arrow i {
-  font-size: 30px;
-  background-color: transparent;
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .overlay {
@@ -452,7 +364,6 @@ h2 {
   opacity: 0;
   overflow: hidden;
   width: 100%;
-  z-index: 2;
 }
 
 .overlay:hover {
