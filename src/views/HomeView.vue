@@ -323,7 +323,6 @@ h2 {
   padding: 0;
   position: relative;
   margin: 0 7.3% 80px 7.3%;
-  z-index: 50;
 }
 
 .swiper {
@@ -334,7 +333,6 @@ h2 {
 
 .swiper-slide {
   height: 100%;
-  
 }
 
 .router {
@@ -404,6 +402,19 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 950px) {
 
+  .hero {
+    background-position: 75%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
 </style>
 

@@ -61,14 +61,14 @@ const toggleBurger = () => {
     flex-direction: column;
     gap: 80px;
     position: absolute;
-    top: 4.9rem;
+    top: 100px;
     right: 0;
     z-index: 99;
     box-shadow: 1px 2px 4px black;
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 .burger-button {
@@ -91,16 +91,14 @@ const toggleBurger = () => {
 .icons i {
     background-color: #0d0d0d;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .icon {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-.icon i {
-    text-decoration: none;
-}
+
 
 
 

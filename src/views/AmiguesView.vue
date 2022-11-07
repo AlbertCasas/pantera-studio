@@ -3,7 +3,7 @@
     <NavBar />
     <div class="mans-amigues">
       <div class="main-img">
-        <img src="https://i.ibb.co/W0Gsj2p/Recurso-26.png" alt="main">
+        <img src="https://ibb.co/X3JnPvz" alt="main">
       </div>
       <div class="info">
         <div class="data">
