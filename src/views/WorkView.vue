@@ -261,4 +261,84 @@ import FooterComp from '../components/FooterComp.vue'
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .work {
+  grid-template-columns: auto 40px auto;
+  grid-template-rows: auto 40px auto 40px auto 40px auto;
+}
+
+.r1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.r2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.r3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.r4 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.r5 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.r6 {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+  .work {
+  grid-template-columns: auto;
+  grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto;
+  margin: 40px 7.3% 40px 7.3%;
+}
+
+.r1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.r2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.r3 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.r4 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+
+.r5 {
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
+.r6 {
+  grid-column: 1/2;
+  grid-row: 11/12;
+}
+
+.router-img {
+  border-radius: 20px;
+}
+}
+
 </style>

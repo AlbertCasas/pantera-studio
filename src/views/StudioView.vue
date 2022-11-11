@@ -26,7 +26,7 @@ import FooterComp from '../components/FooterComp.vue'
 <style scoped>
 .studio {
   width: 86%;
-  margin: 80px 7.3% 140px 7.3%;
+  margin: 40px 7.3% 80px 7.3%;
 }
 
 .text {
@@ -38,5 +38,21 @@ import FooterComp from '../components/FooterComp.vue'
   font-size: 30px;
   font-weight: 400;
   line-height: 120%;
+}
+
+@media only screen and (max-width: 900px) {
+  .text p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .studio {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+  .text {
+    width: 100%;
+  }
 }
 </style>

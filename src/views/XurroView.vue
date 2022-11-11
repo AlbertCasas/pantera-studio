@@ -3,7 +3,7 @@
     <NavBar />
     <div class="cal-xurro">
       <div class="main-img">
-        <img src="https://i.ibb.co/2Sr8WWw/Recurso-53.png" alt="main">
+        
       </div>
       <div class="info">
         <div class="data">
@@ -59,8 +59,13 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 80px;
+    height: 846px;
+    margin-bottom: 40px;
     border-radius: 30px;
+    background-image: url('https://i.ibb.co/2Sr8WWw/Recurso-53.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; 
   }
 
   .main-img img {
@@ -197,4 +202,63 @@ import FooterComp from '../components/FooterComp.vue'
     color: #E61933;
   }
 
+
+@media only screen and (max-width: 1300px) {
+    .info {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .text {
+      width: 100%;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .main-img {
+      height: 534px;
+    }
+
+    .data p {
+      font-size: 18px;
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    .cal-xurro {
+      margin: 40px 7.3% 40px 7.3%;
+    }
+
+    .main-img {
+      height: 450px;
+      border-radius: 20px;
+    }
+
+    .img-grid {
+    grid-template-columns: auto 20px auto 20px auto;
+    grid-template-rows: auto 20px auto 20px auto;
+    margin-bottom: 20px;
+  }
+
+  .img-grid img {
+    border-radius: 20px;
+  }
+
+  .mosaic img{
+    border-radius: 20px;
+  }
+
+  .arrow {
+    font-size: 18px;
+    }
+  }
+
+  
 </style>

@@ -3,7 +3,7 @@
     <NavBar />
     <div class="mans-amigues">
       <div class="main-img">
-        <img src="https://ibb.co/X3JnPvz" alt="main">
+        <img src="https://i.ibb.co/z7f3g0S/Recurso-95-2x-1.png" alt="main" border="0">
       </div>
       <div class="info">
         <div class="data">
@@ -60,7 +60,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     height: 100%;
   }
 

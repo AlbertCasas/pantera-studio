@@ -23,6 +23,7 @@ import HamburgerMenu from './HamburgerMenu.vue'
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 .navbar-content {

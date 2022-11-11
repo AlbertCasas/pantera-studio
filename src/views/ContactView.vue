@@ -4,28 +4,24 @@
     <div class="contact">
       <div class="form">
         <div class="box">
-          <div class="name-email">
-            <input type="text" name="name" placeholder="Name" v-model="name">
-            <input type="email" name="email" placeholder="Email" v-model="email">
-          </div>
-          <input type="text" name="subject" placeholder="Subject" v-model="subject">
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
-          <div class="err-msg-send">
-            <p v-if="errorMsg" class="err-msg">{{ errorMsg }}</p>
-            <button @click.prevent="sendMessage" class="button" type="submit">SEND</button>
-          </div>
+          <input class="name" type="text" name="name" placeholder="Name" v-model="name">
+          <input class="email" type="email" name="email" placeholder="Email" v-model="email">
+          <input class="subject" type="text" name="subject" placeholder="Subject" v-model="subject">
+          <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
+          <p v-if="errorMsg" class="err-msg">{{ errorMsg }}</p>
+          <button @click.prevent="sendMessage" class="button" type="submit">SEND</button>
         </div>
-        </div>
+      </div>
       <div class="text">
-        <p>Hi! If you have a project, collaboration or inquiry in mind that we can help you with, <span>DROP US A LINE</span>.</p>
+        <p>Hi! If you have a project, collaboration or inquiry in mind that we can help you with, <br> <span>DROP US A LINE</span>.</p>
         <p>If we can't, at least we'll point you in the right direction to the best of our knowledge. <br> <span>WE ARE KIND PEOPPLE</span>.</p>
         <p>hello.panterastudio@gmail.com</p>
         <p>+34 695 664 603</p>
         <p>Flos i Calcat, 17, 19-B <br>El Masnou, 08320 <br>Barcelona</p>
         <div class="icons">
-          <a href="https://www.instagram.com/_panterastudio/" target="_blank" class="icon"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://www.behance.net/panterastudio" target="_blank" class="icon"><i class="fa-brands fa-square-behance"></i></a>
-          <a href="https://www.linkedin.com/in/pantera-studio-89866423b/" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/_panterastudio/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.behance.net/panterastudio" target="_blank" class="icon"><i class="fa-brands fa-behance"></i></a>
+          <a href="https://www.linkedin.com/in/pantera-studio-89866423b/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
@@ -81,25 +77,54 @@ const sendMessage = () => {
 }
 
 .form {
-  width: 60%;
+  width: calc(60% - 20px);
   display: flex;
   flex-direction: column;
 }
 
 .box {
+  width: 100%;
   background-color: #0d0d0d;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 40px;
+  display: grid;
+  grid-template-columns: 40px calc(50% - 60px) 40px calc(50% - 60px) 40px;
+  grid-template-rows: 40px auto 40px auto 40px auto 40px auto 40px;
   border-radius: 30px;
-  margin-bottom: 40px;
+}
+
+.name {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.email {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.subject {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+
+.message {
+  grid-column: 2/5;
+  grid-row: 6/7;
+}
+
+.err-msg {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+
+.button {
+  grid-column: 4/5;
+  grid-row: 8/9;
 }
 
 .box input {
   height: 40px;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   padding: 1rem;
   border: none;
 }
@@ -112,33 +137,12 @@ const sendMessage = () => {
 
 .box textarea {
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   padding: 1rem;
-}
-
-.box textarea {
   border: none;
   outline: none;
 }
 
-.name-email {
-  background-color: #0d0d0d;
-  display: flex;
-  gap: 40px;
-}
-
-.name-email input {
-  width: 450px;
-}
-
-.err-msg-send {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #0d0d0d;
-  gap: 30%;
-}
 
 .button {
   height: 52px;
@@ -151,7 +155,6 @@ const sendMessage = () => {
   font-weight: 900;
   border-radius: 15px;
   justify-self: flex-end;
-  align-self: flex-end;
   cursor: pointer;
   border: 4px solid white;
 }
@@ -164,11 +167,12 @@ const sendMessage = () => {
 .err-msg {
   background-color: #0d0d0d;
   color: white;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .text {
   cursor: default;
+  width: calc(40% - 20px);
 }
 
 .text p {
@@ -197,5 +201,88 @@ const sendMessage = () => {
     color: #E61933;
 }
 
+@media only screen and (max-width: 1500px) {
+  .contact {
+    flex-direction: column-reverse;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .box {
+    grid-template-columns: 30px calc(50% - 45px) 30px calc(50% - 45px) 30px;
+    grid-template-rows: 30px auto 30px auto 30px auto 30px auto 30px auto 30px;
+  }
+
+  .name {
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+
+.email {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+
+.subject {
+  grid-column: 2/5;
+  grid-row: 6/7;
+}
+
+.message {
+  grid-column: 2/5;
+  grid-row: 8/9;
+}
+
+.err-msg {
+  grid-column: 2/3;
+  grid-row: 10/11;
+}
+
+.button {
+  grid-column: 4/5;
+  grid-row: 10/11;
+}
+
+  .box input {
+    font-size: 20px;
+  }
+
+  .box textarea {
+    font-size: 20px;
+  }
+
+  .err-msg {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
+
+  .icons {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .contact {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+  .box {
+    grid-template-columns: 20px calc(50% - 30px) 20px calc(50% - 30px) 20px;
+    grid-template-rows: 20px auto 20px auto 20px auto 20px auto 20px auto 20px;
+    border-radius: 20px;
+  }
+}
 
 </style>

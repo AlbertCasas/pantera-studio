@@ -42,7 +42,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     border-radius: 30px;
   }
 

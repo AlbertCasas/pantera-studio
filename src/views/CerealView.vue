@@ -3,7 +3,7 @@
     <NavBar />
     <div class="cereal">
       <div class="main-img">
-        <img src="https://i.ibb.co/st6BRPw/cover.png" alt="main">
+        <h1>MAGIC <br> CEREAL</h1>
       </div>
       <div class="info">
         <div class="data">
@@ -60,13 +60,26 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     border-radius: 30px;
+    height: 846px;
+    background-image: url('https://i.ibb.co/XW1Fjbd/Recurso-99.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
   }
 
-  .main-img img {
-    width: 100%;
-    border-radius: 30px;
+  .main-img h1 {
+    background-color: transparent;
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    color: white;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 120px;
+    font-family: 'Rubik';
   }
 
   .info {
@@ -164,4 +177,76 @@ import FooterComp from '../components/FooterComp.vue'
     color: #E61933;
   }
 
+
+@media only screen and (max-width: 1300px) {
+  .main-img {
+    background-position: rigth;
+  }
+
+  .main-img h1 {
+    left: 80px;
+    top: 40px;
+    color: white;
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .info {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .text {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-img {
+      height: 534px;
+    }
+
+    .main-img h1 {
+    left: 80px;
+    top: 40px;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+    .data p {
+      font-size: 18px;
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+  .main-img h1 {
+    left: 60px;
+    top: 30px;
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 750px)  {
+  .main-img {
+    background-image: url('https://i.ibb.co/4NrPqKg/Recurso-98.png');
+    background-position: top;
+    height: 450px;
+    border-radius: 20px;
+  }
+
+  .main-img h1 {
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 </style>

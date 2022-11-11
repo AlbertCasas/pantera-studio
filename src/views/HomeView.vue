@@ -14,6 +14,7 @@
       <div class="button">
         <RouterLink to="/contact"><button class="contact">CONTACT</button></RouterLink>
       </div>
+      <div class="background"></div>
     </div>
     <div class="work">
       <h1>WORK</h1>
@@ -200,7 +201,7 @@ const swiperOptions = {
   breakpoints: {
     
 
-    800: {
+    950: {
       slidesPerView: 2.5
     },
 
@@ -223,7 +224,7 @@ const swiperOptions = {
   background-image: url('https://i.ibb.co/vqsk9Rv/Recurso-76.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
   height: 900px;
   display: flex;
   flex-direction: column;
@@ -231,7 +232,19 @@ const swiperOptions = {
   gap: 40px;
   border-radius: 30px;
   animation: rotate 24s .5ms infinite;
-  animation-timing-function:steps(1)
+  animation-timing-function:steps(1);
+  position: relative;
+  
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .2);
+  z-index: 1;
 }
 
 @keyframes rotate {
@@ -268,6 +281,7 @@ const swiperOptions = {
 .main {
   background-color: transparent;
   margin-left: 40px;
+  z-index: 2;
 }
 
 h1 {
@@ -287,11 +301,13 @@ h2 {
 .secondary {
   background-color: transparent;
   margin-left: 40px;
+  z-index: 2;
 }
 
 .button {
   background-color: transparent;
   margin-left: 40px;
+  z-index: 2;
 }
 
 .contact {
@@ -402,10 +418,10 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1300px) {
 
   .hero {
-    background-position: 75%;
+    height: 864px;
   }
 
   h1 {
@@ -415,6 +431,112 @@ h2 {
   h2 {
     font-size: 40px;
   }
+
+  @keyframes rotate {
+  0% {
+    background-image: url('https://i.ibb.co/vqsk9Rv/Recurso-76.png');
+    
+  }
+
+
+  16.6%{
+    background-image: url('https://i.ibb.co/SyHrY3D/Recurso-71.png');
+    background-position: 82%;
+  }
+
+  33.2% {
+    background-image: url('https://i.ibb.co/qCCdqBb/Recurso-72.png');
+    background-position: 72%;
+  }
+
+  49.8% {
+    background-image: url('https://i.ibb.co/JswpY8p/Recurso-73.png');
+    background-position: 65%;
+  }
+
+  66.4% {
+    background-image: url('https://i.ibb.co/MM0Ch7j/Recurso-74.png');
+    background-position: 70%;
+  }
+
+  83% {
+    background-image: url('https://i.ibb.co/7KC8Tpk/Recurso-75.png');
+    background-position: 50%;
+  }
+
+  100% {
+    background-image: url('https://i.ibb.co/vqsk9Rv/Recurso-76.png');
+  }
 }
+
+.contact {
+  height: 60px;
+  width: 240px;
+  text-align: center;
+  border: none;
+  background-color: #0d0d0d;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+}
+@media only screen and (max-width: 700px) {
+  .hero {
+    height: 600px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  @keyframes rotate {
+  0% {
+    background-image: url('https://i.ibb.co/vqsk9Rv/Recurso-76.png');
+    
+  }
+
+
+  16.6%{
+    background-image: url('https://i.ibb.co/SyHrY3D/Recurso-71.png');
+    background-position: 82%;
+  }
+
+  33.2% {
+    background-image: url('https://i.ibb.co/qCCdqBb/Recurso-72.png');
+    background-position: 72%;
+  }
+
+  49.8% {
+    background-image: url('https://i.ibb.co/JswpY8p/Recurso-73.png');
+    background-position: 65%;
+  }
+
+  66.4% {
+    background-image: url('https://i.ibb.co/MM0Ch7j/Recurso-74.png');
+    background-position: 50%;
+  }
+
+  83% {
+    background-image: url('https://i.ibb.co/7KC8Tpk/Recurso-75.png');
+  }
+
+  100% {
+    background-image: url('https://i.ibb.co/vqsk9Rv/Recurso-76.png');
+    background-position: 50%;
+  }
+}
+
+.swiper-slide img {
+  border-radius: 20px;
+}
+}
+
+
 </style>
 
