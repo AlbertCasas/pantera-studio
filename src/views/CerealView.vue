@@ -29,10 +29,6 @@
         <img class="g2" src="https://i.ibb.co/cwhv3tn/Recurso-25.png" alt="rainbow">
         <img class="g3" src="https://i.ibb.co/cFtn76S/Recurso-23.png" alt="moon">
       </div>
-      <div class="extra-imgs">
-        <div class="small"></div>
-        <div class="big"></div>
-      </div>
       <div class="boxes">
         <img class="b1" src="https://i.ibb.co/4JBH3Nx/Recurso-48.png" alt="golden">
         <img class="b2" src="https://i.ibb.co/gFXQ1RY/Recurso-49.png" alt="rainbow">
@@ -120,21 +116,19 @@ import FooterComp from '../components/FooterComp.vue'
 
   .grid img {
     width: 100%;
+    border-radius: 30px;
   }
 
   .g1 {
     grid-column: 1/2;
-    border-radius: 30px;
   }
 
   .g2 {
     grid-column: 3/4;
-    border-radius: 30px;
   }
 
   .g3 {
     grid-column: 5/6;
-    border-radius: 30px;
   }
 
   .boxes {
@@ -180,7 +174,7 @@ import FooterComp from '../components/FooterComp.vue'
 
 @media only screen and (max-width: 1300px) {
   .main-img {
-    background-position: rigth;
+    background-position: 65%;
   }
 
   .main-img h1 {
@@ -234,11 +228,14 @@ import FooterComp from '../components/FooterComp.vue'
 }
 
 @media only screen and (max-width: 750px)  {
+  .cereal {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
   .main-img {
     background-image: url('https://i.ibb.co/4NrPqKg/Recurso-98.png');
     background-position: top;
     height: 450px;
-    border-radius: 20px;
   }
 
   .main-img h1 {
@@ -247,6 +244,45 @@ import FooterComp from '../components/FooterComp.vue'
     color: white;
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .arrow {
+    font-size: 18px;
+    }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .main-img {
+    background-image: url('https://i.ibb.co/gzRvMHg/Recurso-92.png');
+    background-position: center;
+    border-radius: 20px;
+  }
+
+  .main-img h1 {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: auto 20px auto 20px auto;
+  }
+
+  .grid img {
+    border-radius: 20px;
+  }
+
+  .boxes {
+    border-radius: 20px;
+  }
+
+
+  .b1 {
+    margin: 40px 0;
+  }
+
+  .b3 {
+    margin: 40px 0;
   }
 }
 </style>

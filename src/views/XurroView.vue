@@ -228,13 +228,21 @@ import FooterComp from '../components/FooterComp.vue'
     .text p {
       font-size: 18px;
     }
+
+    .arrow {
+    font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .cal-xurro {
+      margin: 40px 7.3% 40px 7.3%;
+    }
+
   }
 
 
   @media only screen and (max-width: 500px) {
-    .cal-xurro {
-      margin: 40px 7.3% 40px 7.3%;
-    }
 
     .main-img {
       height: 450px;
@@ -254,11 +262,7 @@ import FooterComp from '../components/FooterComp.vue'
   .mosaic img{
     border-radius: 20px;
   }
-
-  .arrow {
-    font-size: 18px;
-    }
-  }
+}
 
   
 </style>

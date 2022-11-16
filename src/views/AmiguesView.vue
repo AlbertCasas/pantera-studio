@@ -3,7 +3,7 @@
     <NavBar />
     <div class="mans-amigues">
       <div class="main-img">
-        <img src="https://i.ibb.co/z7f3g0S/Recurso-95-2x-1.png" alt="main" border="0">
+        
       </div>
       <div class="info">
         <div class="data">
@@ -25,12 +25,10 @@
         </div>
       </div>
       <div class="extra-imgs">
-        <div class="small"></div>
-        <div class="big"></div>
-      </div>
-      <div class="extra-imgs">
-        <div class="small-2"></div>
-        <div class="big-2"></div>
+        <img class="x1" src="https://i.ibb.co/Rp20yb7/POS.png" alt="mans-amigues">
+        <img class="x2" src="https://i.ibb.co/BsL7WM1/Recurso-27.png" alt="">
+        <img class="x3" src="https://i.ibb.co/7vffhkC/NEG.png" alt="">
+        <img class="x4" src="https://i.ibb.co/fCjR3h6/Recurso-28.png" alt="">
       </div>
       <div class="triptic">
         <img src="https://i.ibb.co/48N8D1r/TRYFOLD.png" alt="triptic">
@@ -61,15 +59,15 @@ import FooterComp from '../components/FooterComp.vue'
   .main-img {
     width: 100%;
     margin-bottom: 40px;
-    height: 100%;
-  }
-
-  .main-img img {
-    width: 100%;
+    height: 846px;
     border-radius: 30px;
-    object-fit: cover;
+    background-image: url('https://i.ibb.co/z7f3g0S/Recurso-95-2x-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
   }
 
+  
   .info {
     width: 100%;
     display: flex;
@@ -101,53 +99,40 @@ import FooterComp from '../components/FooterComp.vue'
 
   .extra-imgs {
     width: 100%;
-    height: 600px;
     display: grid;
     grid-template-columns: auto 40px auto auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto 40px auto;
     margin-bottom: 40px;
   }
 
-  .small {
+  .x1 {
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 30px;
-    background-image: url("https://i.ibb.co/Rp20yb7/POS.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .big {
-    border-radius: 30px;
-    grid-column: 3/5;
-    grid-row: 1/2;
-    background-image: url("https://i.ibb.co/BsL7WM1/Recurso-27.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
   }
 
-  .small-2 {
+  .x2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .x3 {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 3/4;
     border-radius: 30px;
-    background-image: url("https://i.ibb.co/7vffhkC/NEG.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
   }
-  
 
-  .big-2 {
-    border-radius: 30px;
+  .x4 {
     grid-column: 3/5;
-    grid-row: 1/2;
-    background-image: url("https://i.ibb.co/fCjR3h6/Recurso-28.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    grid-row: 3/4;
+    border-radius: 30px;
+    width: 100%;
   }
+
 
   .triptic {
     width: 100%;
@@ -186,5 +171,93 @@ import FooterComp from '../components/FooterComp.vue'
 
   .arrow span:hover {
     color: #E61933;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .info {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .text {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .main-img {
+      height: 534px;
+    }
+
+    .data p {
+      font-size: 18px;
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+
+    .arrow {
+    font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .mans-amigues {
+      margin: 40px 7.3% 40px 7.3%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    
+    .main-img {
+      height: 450px;
+      border-radius: 20px;
+    }
+
+    .extra-imgs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 20px auto;
+    grid-template-rows: auto 20px auto 20px auto;
+    margin-bottom: 40px;
+  }
+
+  .x1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .x2 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .x3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .x4 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+
+    .triptic img {
+      border-radius: 20px;
+    }
+
+    .cards img {
+      border-radius: 20px;
+    }
   }
 </style>

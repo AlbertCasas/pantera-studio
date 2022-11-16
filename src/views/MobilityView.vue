@@ -234,7 +234,7 @@ import FooterComp from '../components/FooterComp.vue'
       background-position: center;
       background-size: initial;
       height: 450px;
-      background-image: url('https://i.ibb.co/T4wjxHW/Recurso-97.png');
+      
       border-radius: 20px;
     }
 
@@ -272,6 +272,10 @@ import FooterComp from '../components/FooterComp.vue'
     }
   }
 
-
+@media only screen and (max-width: 500px) {
+  .main-img {
+    background-image: url('https://i.ibb.co/T4wjxHW/Recurso-97.png');
+  }
+}
 
 </style>
