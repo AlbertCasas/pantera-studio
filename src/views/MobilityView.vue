@@ -59,7 +59,6 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    height: 846px;
     margin-bottom: 40px;
     border-radius: 30px;
     background-image: url('https://i.ibb.co/FmYC9Lc/Recurso-85.png');
