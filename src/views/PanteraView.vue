@@ -22,7 +22,7 @@
       </div>
       <div class="arrows">
         <RouterLink to="/work/breathe" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
-        <RouterLink to="/work/mobility" class="arrow"><span>NEXT &nbsp; </span><i class="fa-sharp fa-solid fa-caret-right"></i></RouterLink>
+        <RouterLink to="/work/pointer" class="arrow"><span>NEXT &nbsp; </span><i class="fa-sharp fa-solid fa-caret-right"></i></RouterLink>
       </div>
     </div>
     <FooterComp />

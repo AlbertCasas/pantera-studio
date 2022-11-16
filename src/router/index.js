@@ -57,6 +57,11 @@ const router = createRouter({
       name: 'pantera',
       component: () => import('../views/PanteraView.vue'),
     },
+    {
+      path: '/work/pointer',
+      name: 'pointer',
+      component: () => import('../views/PointerView.vue')
+    },
   ],
   scrollBehavior() {
     return {top: 0}

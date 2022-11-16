@@ -26,7 +26,34 @@
         :breakpoints="swiperOptions.breakpoints"
         class="mySwiper"
       >
-        <swiper-slide class="s1"><RouterLink class="router mr" to="/work/mobility">
+      <swiper-slide class="s0">
+        <RouterLink class="router mr" to="/work/pointer">
+        <img class="router-img" src="https://i.ibb.co/Cvkkx8V/TARGETA.png" alt="pointer">
+        <div class="overlay">
+          <div class="marquee">
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+          </div>
+        </div>
+      </RouterLink></swiper-slide>
+        <swiper-slide class="s1">
+        <RouterLink class="router mr" to="/work/mobility">
         <img class="router-img" src="https://i.ibb.co/5xCPn18/Recurso-83.png" alt="mobility-map">
         <div class="overlay">
           <div class="marquee">

@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="arrows">
-        <RouterLink to="/work/pantera" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
+        <RouterLink to="/work/pointer" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
         <RouterLink to="/work/calxurro" class="arrow"><span>NEXT &nbsp; </span><i class="fa-sharp fa-solid fa-caret-right"></i></RouterLink>
       </div>
     </div>
@@ -59,6 +59,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
+    height: 846px;
     margin-bottom: 40px;
     border-radius: 30px;
     background-image: url('https://i.ibb.co/FmYC9Lc/Recurso-85.png');

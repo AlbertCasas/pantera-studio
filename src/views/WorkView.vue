@@ -2,6 +2,31 @@
   <div>
     <NavBar />
     <div class="work">
+      <RouterLink class="router r0" to="/work/pointer">
+        <img class="router-img" src="https://i.ibb.co/Cvkkx8V/TARGETA.png" alt="pointer">
+        <div class="overlay">
+          <div class="marquee">
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+            <h1>POINTER CRAFT BEER -</h1>
+          </div>
+        </div>
+      </RouterLink>
       <RouterLink class="router r1" to="/work/mobility">
         <img class="router-img" src="https://i.ibb.co/5xCPn18/Recurso-83.png" alt="mobility-map">
         <div class="overlay">
@@ -165,7 +190,7 @@ import FooterComp from '../components/FooterComp.vue'
   margin: 40px 7.3% 80px 7.3%;
   display: grid;
   grid-template-columns: auto 40px auto 40px auto;
-  grid-template-rows: auto 40px auto;
+  grid-template-rows: auto 40px auto 40px auto;
 }
 
 
@@ -175,34 +200,39 @@ import FooterComp from '../components/FooterComp.vue'
   position: relative;
 }
 
-.r1 {
+.r0 {
   grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.r1 {
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 
 .r2 {
-  grid-column: 3/4;
+  grid-column: 5/6;
   grid-row: 1/2;
 }
 
 .r3 {
-  grid-column: 5/6;
-  grid-row: 1/2;
-}
-
-.r4 {
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-.r5 {
+.r4 {
   grid-column: 3/4;
   grid-row: 3/4;
 }
 
-.r6 {
+.r5 {
   grid-column: 5/6;
   grid-row: 3/4;
+}
+
+.r6 {
+  grid-column: 1/2;
+  grid-row: 5/6;
 }
 
 
