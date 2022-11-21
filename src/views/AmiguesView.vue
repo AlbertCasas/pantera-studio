@@ -173,6 +173,13 @@ import FooterComp from '../components/FooterComp.vue'
     color: #E61933;
   }
 
+@media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 600px;
+  }
+}
+
+
   @media only screen and (max-width: 1300px) {
     .info {
       flex-direction: column;

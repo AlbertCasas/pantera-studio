@@ -202,4 +202,10 @@ import FooterComp from "../components/FooterComp.vue";
 .arrow span:hover {
   color: #e61933;
 }
+
+@media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 600px;
+  }
+}
 </style>

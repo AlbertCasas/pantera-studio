@@ -30,10 +30,13 @@
         <img src="https://i.ibb.co/rp6wYpy/Recurso-6.png" alt="map">
       </div>
       <div class="extra-imgs">
-        <div class="small">
+        <div class="x1">
           <img src="https://i.ibb.co/GvzjWXf/Recurso-4.png" alt="Recurso-4" border="0">
         </div>
-        <div class="big">
+        <div class="x2">
+          <img src="https://i.ibb.co/zWdPzjM/triptic.png" alt="triptic">
+        </div>
+        <div class="x3">
           <img src="https://i.ibb.co/7pjTx1t/IMG-20220918-WA0007.jpg" alt="IMG-20220918-WA0007" border="0">
         </div>
       </div>
@@ -112,37 +115,44 @@ import FooterComp from '../components/FooterComp.vue'
 
   .extra-imgs {
     width: 100%;
-    height: 600px;
     display: grid;
-    grid-template-columns: auto 40px auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: auto 40px auto;
+    grid-template-rows: auto 40px auto;
     margin-bottom: 80px;
   }
 
-  .small {
+  .x1 {
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 30px;
-    height: 500px;
   }
 
-  .small img{
+  .x1 img{
     width: 100%;
-    height: 500px;
+    border-radius: 30px;
+  }
+
+  .x2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 30px;
+  }
+
+  .x2 img{
+    width: 100%;
     border-radius: 30px;
   }
   
 
-  .big {
+  .x3 {
     border-radius: 30px;
-    grid-column: 3/5;
-    grid-row: 1/2;
-    height: 500px;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    
   }
 
-  .big img {
+  .x3 img {
     width: 100%;
-    height: 500px;
     border-radius: 30px;
   }
 
@@ -162,6 +172,12 @@ import FooterComp from '../components/FooterComp.vue'
   .arrow span:hover {
     color: #E61933;
   }
+
+@media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 600px;
+  }
+}
 
   @media only screen and (max-width: 1300px) {
     .info {

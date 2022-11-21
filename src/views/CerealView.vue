@@ -3,7 +3,6 @@
     <NavBar />
     <div class="cereal">
       <div class="main-img">
-        <h1>MAGIC <br> CEREAL</h1>
       </div>
       <div class="info">
         <div class="data">
@@ -23,6 +22,15 @@
           <p>The project has included the creation of the narrative around the product, the character
           design, the packaging design and a short spot for social media.</p>
         </div>
+      </div>
+      <div class="video">
+        <i v-if="playing === true" class="fa-solid fa-pause"></i>
+        <i v-if="playing === false" class="fa-solid fa-play"></i>
+        <i v-if="muted === true" class="fa-solid fa-volume"></i>
+        <i v-if="muted === false" class="fa-solid fa-volume-xmark"></i>
+        <video autoplay muted loop id="video">
+          <source src="../assets/video/Cereal-AV.mp4">
+        </video>
       </div>
       <div class="grid">
         <img class="g1" src="https://i.ibb.co/GQ7CXCj/Recurso-24.png" alt="golden">
@@ -46,6 +54,11 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
 import FooterComp from '../components/FooterComp.vue'
+import {ref} from "vue"
+
+const playing = ref(true);
+const muted = ref(true);
+
 </script>
 
 <style scoped>
@@ -64,18 +77,6 @@ import FooterComp from '../components/FooterComp.vue'
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
-  }
-
-  .main-img h1 {
-    background-color: transparent;
-    position: absolute;
-    left: 120px;
-    top: 50px;
-    color: white;
-    font-size: 120px;
-    font-weight: 900;
-    line-height: 120px;
-    font-family: 'Rubik';
   }
 
   .info {
@@ -105,6 +106,42 @@ import FooterComp from '../components/FooterComp.vue'
     font-size: 30px;
     font-weight: 400;
     line-height: 120%;
+  }
+
+  .video {
+    margin-bottom: 40px;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .fa-solid {
+    position: absolute;
+    z-index: 99;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .fa-pause {
+    color: #0d0d0d;
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .fa-volume {
+    color: #0d0d0d;
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99;
+  }
+
+  #video {
+    border-radius: 30px;
+    width: 100%;
+    clip-path: inset(1px 1px);
   }
 
   .grid {
@@ -171,19 +208,18 @@ import FooterComp from '../components/FooterComp.vue'
     color: #E61933;
   }
 
+@media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 600px;
+  }
+}
+
 
 @media only screen and (max-width: 1300px) {
   .main-img {
     background-position: 65%;
   }
 
-  .main-img h1 {
-    left: 80px;
-    top: 40px;
-    color: white;
-    font-size: 100px;
-    line-height: 100px;
-  }
 
   .info {
       flex-direction: column;
@@ -200,14 +236,6 @@ import FooterComp from '../components/FooterComp.vue'
       height: 534px;
     }
 
-    .main-img h1 {
-    left: 80px;
-    top: 40px;
-    color: white;
-    font-size: 80px;
-    line-height: 80px;
-  }
-
     .data p {
       font-size: 18px;
     }
@@ -217,15 +245,6 @@ import FooterComp from '../components/FooterComp.vue'
     }
 }
 
-@media only screen and (max-width: 900px)  {
-  .main-img h1 {
-    left: 60px;
-    top: 30px;
-    color: white;
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
 
 @media only screen and (max-width: 750px)  {
   .cereal {
@@ -233,9 +252,9 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   .main-img {
-    background-image: url('https://i.ibb.co/4NrPqKg/Recurso-98.png');
-    background-position: top;
+    background-position: rigth;
     height: 450px;
+    
   }
 
   .main-img h1 {
@@ -255,7 +274,7 @@ import FooterComp from '../components/FooterComp.vue'
 @media only screen and (max-width: 500px) {
   
   .main-img {
-    background-image: url('https://i.ibb.co/gzRvMHg/Recurso-92.png');
+    background-image: url('https://i.ibb.co/fDNj2Qj/cereal-mobile.png');
     background-position: center;
     border-radius: 20px;
   }

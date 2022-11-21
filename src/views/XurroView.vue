@@ -36,6 +36,9 @@
       </div>
       <div class="mosaic">
         <img src="https://i.ibb.co/MDmGLkQ/Recurso-40.png" alt="mosaic">
+        <img src="https://i.ibb.co/rvG3jvw/3-Coffee-Cup-Mockups-2.png" alt="cups">
+        <img src="https://i.ibb.co/dJYF0Q1/Paper-Bag-1.png" alt="bag">
+        <img src="https://i.ibb.co/Q8frdxB/Business-Card-Mockup.png" alt="cards">
       </div>
       <div class="arrows">
         <RouterLink to="/work/mobility" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
@@ -177,6 +180,9 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
     border-radius: 30px;
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .mosaic img {
@@ -201,6 +207,12 @@ import FooterComp from '../components/FooterComp.vue'
   .arrow span:hover {
     color: #E61933;
   }
+
+@media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 600px;
+  }
+}
 
 
 @media only screen and (max-width: 1300px) {
