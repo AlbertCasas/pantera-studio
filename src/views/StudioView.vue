@@ -22,7 +22,7 @@
                 <li>Branding</li>
                 <li>Illustration</li>
                 <li>Editorial</li>
-                <li>Packaging</li>
+                <li class="last">Packaging</li>
               </ul>
             </div>
             <img src="https://i.ibb.co/dk4pMXS/print.png" alt="print">
@@ -196,7 +196,7 @@ import FooterComp from '../components/FooterComp.vue'
   font-size: 40px;
   font-weight: bold;
   line-height: 90%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .list ul {
@@ -205,11 +205,13 @@ import FooterComp from '../components/FooterComp.vue'
 
 .list li {
   font-size: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
+
 
 .services-option {
   width: 50%;
+  margin-top: 20px;
   margin-bottom: 80px;
 }
 
