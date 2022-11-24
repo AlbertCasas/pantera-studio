@@ -45,7 +45,7 @@
         <div class="process">
           <h1>THE PROCESS</h1>
           <div class="explanation">
-            <p>We have designed a 7 steps process to take any project forward. Although, depending on the different services we offer, the process has variations, there is common ground in the way we do things.</p>
+            <p>We have designed a <b>7 steps process</b> to take any project forward. Although, depending on the different services we offer, the process has variations, there is common ground in the way we do things.</p>
           </div>
           <div class="steps">
             <div class="step1 step">
@@ -72,7 +72,7 @@
             <div class="step4 step">
               <h2>4.0</h2>
               <div class="info">
-                <h2>CENCEPT DESIGN</h2>
+                <h2>CONCEPT DESIGN</h2>
                 <p>Following your choice on the visual direction you want your project to take and the feedback that you provide on it, we will start the full design of your project. Including all the design elements necessary to achieve the look and feel desired.</p>
               </div>
             </div>
@@ -289,6 +289,40 @@ import FooterComp from '../components/FooterComp.vue'
 .step7 {
   grid-column: 1/2;
   grid-row: 7/8;
+}
+
+@media only screen and (max-width: 1650px) {
+  .text p {
+    font-size: 20px;
+  }
+
+  .services h1 {
+    font-size: 50px;
+  }
+
+  .list h2 {
+    font-size: 30px;
+  }
+
+  .list li {
+    font-size: 20px;
+  }
+
+  .process h1 {
+    font-size: 50px;
+  }
+
+  .explanation p {
+    font-size: 20px;
+  }
+
+  .steps h2 {
+    font-size: 30px;
+  }
+
+  .step p {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
