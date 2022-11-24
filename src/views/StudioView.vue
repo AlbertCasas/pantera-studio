@@ -221,7 +221,7 @@ import FooterComp from '../components/FooterComp.vue'
 }
 
 .explanation {
-  width: 58%;
+  width: 50%;
   margin-bottom: 40px;
 
 }
