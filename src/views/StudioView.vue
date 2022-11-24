@@ -128,6 +128,10 @@ import FooterComp from '../components/FooterComp.vue'
   align-self: center;
 }
 
+.intro p {
+  width: 91%;
+}
+
 .video {
   width: 42%;
   border-radius: 30px;
@@ -205,7 +209,7 @@ import FooterComp from '../components/FooterComp.vue'
 }
 
 .services-option {
-  width: 58%;
+  width: 50%;
   margin-bottom: 80px;
 }
 
