@@ -442,7 +442,7 @@ h2 {
 
 @media only screen and (max-width: 1650px) {
   .hero {
-    height: 650px;
+    height: 600px;
   }
 
   h1 {
@@ -458,7 +458,7 @@ h2 {
 @media only screen and (max-width: 1300px) {
 
   .hero {
-    height: 550px;
+    height: 500px;
   }
 
 
@@ -565,6 +565,7 @@ h2 {
 }
 
 @media only screen and (max-width: 650px) {
+  
   .main {
     margin-left: 20px;
   }
