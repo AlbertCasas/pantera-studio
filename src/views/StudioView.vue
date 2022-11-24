@@ -205,7 +205,7 @@ import FooterComp from '../components/FooterComp.vue'
 }
 
 .services-option {
-  width: 60%;
+  width: 58%;
   margin-bottom: 80px;
 }
 
@@ -221,7 +221,7 @@ import FooterComp from '../components/FooterComp.vue'
 }
 
 .explanation {
-  width: 60%;
+  width: 58%;
   margin-bottom: 40px;
 
 }
@@ -242,7 +242,7 @@ import FooterComp from '../components/FooterComp.vue'
   font-size: 40px;
   font-weight: bold;
   line-height: 90%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .step {
