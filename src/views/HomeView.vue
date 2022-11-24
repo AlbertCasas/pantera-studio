@@ -251,7 +251,7 @@ const swiperOptions = {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 750px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -420,7 +420,7 @@ h2 {
 .marquee h1 {
   display: inline-block;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
   background-color: transparent;
   white-space: nowrap;

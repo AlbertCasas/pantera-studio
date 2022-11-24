@@ -271,7 +271,7 @@ import FooterComp from '../components/FooterComp.vue'
 .marquee h1 {
   display: inline-block;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
   background-color: transparent;
   white-space: nowrap;
