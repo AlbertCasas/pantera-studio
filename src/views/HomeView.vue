@@ -442,7 +442,7 @@ h2 {
 
 @media only screen and (max-width: 1650px) {
   .hero {
-    height: 600px;
+    height: 550px;
   }
 
   h1 {
