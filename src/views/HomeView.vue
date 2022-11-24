@@ -251,7 +251,7 @@ const swiperOptions = {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 800px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -442,7 +442,7 @@ h2 {
 
 @media only screen and (max-width: 1650px) {
   .hero {
-    height: 700px;
+    height: 650px;
   }
 
   h1 {
@@ -458,7 +458,7 @@ h2 {
 @media only screen and (max-width: 1300px) {
 
   .hero {
-    height: 600px;
+    height: 550px;
   }
 
 
@@ -513,7 +513,7 @@ h2 {
 }
 @media only screen and (max-width: 850px) {
   .hero {
-    height: 500px;
+    height: 450px;
     border-radius: 20px;
   }
 
