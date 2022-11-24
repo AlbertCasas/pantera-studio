@@ -291,13 +291,17 @@ import FooterComp from '../components/FooterComp.vue'
   grid-row: 7/8;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
   .text p {
+    font-size: 18px;
+  }
+
+  .step p {
     font-size: 18px;
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
   .studio {
     margin: 40px 7.3% 40px 7.3%;
   }

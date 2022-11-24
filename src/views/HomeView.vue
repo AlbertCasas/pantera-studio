@@ -187,7 +187,7 @@
       </RouterLink>
         </swiper-slide>
         <swiper-slide>
-          <RouterLink class="router " to="/work/pantera">
+          <RouterLink class="router last" to="/work/pantera">
         <img class="router-img" src="https://i.ibb.co/Yh0cfVr/Recurso-82.png" alt="pantera-studio">
         <div class="overlay">
           <div class="marquee">
@@ -240,7 +240,6 @@ const swiperOptions = {
   }
 }
 
-
 </script>
 
 <style lang="scss" scoped>
@@ -252,7 +251,7 @@ const swiperOptions = {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 900px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,7 +319,7 @@ h1 {
 
 h2 {
   background-color: transparent;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 90%;
 }
@@ -359,11 +358,7 @@ h2 {
 }
 
 .carousel {
-  background: #eee;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+  
   position: relative;
   margin: 0 7.3% 80px 7.3%;
 }
@@ -445,19 +440,27 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 1300px) {
-
+@media only screen and (max-width: 1650px) {
   .hero {
-    height: 864px;
+    height: 700px;
   }
 
   h1 {
-    font-size: 50px;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .hero {
+    height: 600px;
   }
 
-  h2 {
-    font-size: 40px;
-  }
 
   @keyframes rotate {
   0% {
@@ -508,19 +511,12 @@ h2 {
   border-radius: 10px;
 }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
   .hero {
-    height: 600px;
+    height: 500px;
     border-radius: 20px;
   }
 
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
 
   @keyframes rotate {
   0% {
@@ -559,8 +555,42 @@ h2 {
   }
 }
 
+.contact {
+  font-size: 18px;
+}
+
 .swiper-slide img {
   border-radius: 20px;
+}
+}
+
+@media only screen and (max-width: 650px) {
+  .main {
+    margin-left: 20px;
+  }
+
+  .secondary {
+    margin-left: 20px;
+  }
+
+  .button {
+    margin-left: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .contact {
+  font-size: 16px;
+}
+
+.router {
+  margin-right: 20px;
 }
 }
 
