@@ -19,9 +19,9 @@
             <div class="list">
               <h2>PRINT</h2>
               <ul>
-                <li>Branding</li>
-                <li>Illustration</li>
-                <li>Editorial</li>
+                <li class="li1">Branding</li>
+                <li class="li2">Illustration</li>
+                <li class="li3">Editorial</li>
                 <li class="last">Packaging</li>
               </ul>
             </div>
@@ -31,9 +31,9 @@
             <div class="list">
               <h2>DIGITAL</h2>
               <ul>
-                <li>Web design</li>
-                <li>Web development</li>
-                <li>Motion design</li>
+                <li class="li1">Web design</li>
+                <li class="li2">Web development</li>
+                <li class="li3">Motion design</li>
               </ul>
             </div>
             <img src="https://i.ibb.co/2W7zbMs/digital.png" alt="digital">
@@ -49,49 +49,49 @@
           </div>
           <div class="steps">
             <div class="step1 step">
-              <h2>1.0</h2>
+              <h2 class="number">1.0</h2>
               <div class="info">
                 <h2>DISCOVERY SESSION</h2>
                 <p>We start by meeting face-to-face or online to find out if we are a good fit to work together, to get to know your company, the scope of the project, the challenges you have encountered and to better understand your current situation and goals.</p>
               </div>
             </div>
             <div class="step2 step">
-              <h2>2.0</h2>
+              <h2 class="number">2.0</h2>
               <div class="info">
                 <h2>EXPLORATION</h2>
                 <p>With the information discovered in the first meeting, we carry out internal competitor and market research to find out what will work for the project, will make you stand out from the competition and sell your services or products.</p>
               </div>
             </div>
             <div class="step3 step">
-              <h2>3.0</h2>
+              <h2 class="number">3.0</h2>
               <div class="info">
                 <h2>CONCEPT DEVELOPMENT</h2>
                 <p>From the internal exploration and brainstorming carried out, we will design and suggest a couple directions your project can go, visually-wise. These suggestions will serve as a starting point to align the visual direction of your project before we start with the overall design.</p>
               </div>
             </div>
             <div class="step4 step">
-              <h2>4.0</h2>
+              <h2 class="number">4.0</h2>
               <div class="info">
                 <h2>CONCEPT DESIGN</h2>
                 <p>Following your choice on the visual direction you want your project to take and the feedback that you provide on it, we will start the full design of your project. Including all the design elements necessary to achieve the look and feel desired.</p>
               </div>
             </div>
             <div class="step5 step">
-              <h2>5.0</h2>
+              <h2 class="number">5.0</h2>
               <div class="info">
                 <h2>CONCEPT REFINEMENT</h2>
                 <p>Following your feedback on the design proposed, we will work together to align the final image of the project with your vision. In order to nail the design according to what you exactly want, this part of the process includes two revisions.</p>
               </div>
             </div>
             <div class="step6 step">
-              <h2>6.0</h2>
+              <h2 class="number">6.0</h2>
               <div class="info">
                 <h2>DELIVERY</h2>
                 <p>Once the final design is agreed upon, in this final phase, we will send you all the necessary material designed for your project.</p>
               </div>
             </div>
             <div class="step7 step">
-              <h2>7.0</h2>
+              <h2 class="number">7.0</h2>
               <div class="info">
                 <h2>PROJECT LAUNCH</h2>
                 <p>You’re ready to launch your project!</p>
@@ -238,6 +238,10 @@ import FooterComp from '../components/FooterComp.vue'
   line-height: 120%;
 }
 
+.number {
+  padding-left: 40px;
+}
+
 .steps {
   display: grid;
   grid-template-columns: auto 40px auto;
@@ -331,23 +335,232 @@ import FooterComp from '../components/FooterComp.vue'
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .intro {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .intro p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .video {
+    width: 60%;
+    align-self: center;
+  }
+
+  .services-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .print {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .print img {
+    padding: 0%;
+    width: 50%;
+  }
+
+  .digital {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .digital img {
+    padding: 0%;
+    width: 50%;
+  }
+
+  .services-option {
+    width: 100%;
+  }
+
   .text p {
     font-size: 18px;
   }
 
-  .step p {
+  .explanation {
+    width: 100%;
+  }
+
+  .explanation p {
     font-size: 18px;
   }
+
+  .number {
+    padding-left: 40px;
+  }
+
+  .steps {
+  grid-template-columns: auto;
+  grid-template-rows: auto 40px auto 40px auto 40px auto 40px auto 40px auto 40px auto;
 }
 
-@media only screen and (max-width: 700px) {
+.step1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.step2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.step3 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.step4 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+
+.step5 {
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
+.step6 {
+  grid-column: 1/2;
+  grid-row: 11/12;
+}
+
+.step7 {
+  grid-column: 1/2;
+  grid-row: 13/14;
+}
+
+.step p {
+  font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 650px) {
   .studio {
     margin: 40px 7.3% 40px 7.3%;
   }
 
+  .intro p {
+    font-size: 16px;
+  }
+
+  .video {
+    width: 100%;
+  }
+
   .text {
     width: 100%;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .services h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .services-content h2 {
+    font-size: 20px;
+  }
+
+  .services-content li {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .list {
+    margin-right: 0px;
+  }
+
+  .list ul {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto 20px auto;
+    grid-template-rows: auto 20px auto;
+  }
+
+  .list li {
+    font-size: 16px;
+  }
+
+  .li1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .li2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .li3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .last {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  .print {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .print img {
+    width: 100%;
+  }
+
+  .digital {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .digital img {
+    width: 100%;
+  }
+
+  .services-option {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+  .explanation p {
+    font-size: 16px;
+  }
+
+  .process h2 {
+    font-size: 20px;
+  }
+
+  .steps {
+  grid-template-rows: auto 20px auto 42px auto 20px auto 20px auto 20px auto 20px auto; 
+}
+
+  .step {
+    gap: 20px;
+  }
+
+  .step p {
+    font-size: 16px;
+  }
+
+  .number {
+    padding-left: 0px;
   }
 }
 </style>
