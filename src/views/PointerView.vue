@@ -73,7 +73,7 @@ import FooterComp from "../components/FooterComp.vue";
 
 .main-img {
   width: 100%;
-  height: 846px;
+  height: 800px;
   margin-bottom: 40px;
   border-radius: 30px;
   background-image: url("https://i.ibb.co/d7XqF38/DESKTOP.png");
@@ -205,7 +205,150 @@ import FooterComp from "../components/FooterComp.vue";
 
 @media only screen and (max-width: 1650px) {
   .main-img {
-    height: 600px;
+    height: 550px;
   }
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+    .main-img {
+      height: 500px;
+    }
+
+    
+    .info {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .text {
+      width: 100%;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 850px) {
+    .main-img {
+      height: 450px;
+      border-radius: 20px;
+    }
+
+    .info {
+    margin-bottom: 40px;
+  }
+
+    .data p {
+      font-size: 18px;
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+
+    .small-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto 20px auto;
+    margin-bottom: 20px;
 }
+
+.sg1 {
+    grid-column:1/2;
+    grid-row: 1/2;
+    border-radius: 20px;
+}
+
+.sg2 {
+    grid-column:1/2;
+    grid-row: 3/4;
+    border-radius: 20px;
+}
+
+.big-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto;
+    margin-bottom: 20px;
+}
+
+.bg {
+    border-radius: 20px;
+}
+
+.bg1 {
+    grid-column:1/2;
+    grid-row: 1/2;
+}
+
+.bg2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.bg3 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.bg4 {
+    grid-column:1/2;
+    grid-row: 7/8;
+}
+
+.bg5 {
+    grid-column:1/2;
+    grid-row: 9/10;
+}
+
+.bg6 {
+    grid-column:1/2;
+    grid-row: 11/12;
+}
+
+.big-images {
+    gap: 20px;
+}
+
+.bi {
+    width: 100%;
+    border-radius: 20px;
+}
+
+    
+  }
+
+  @media only screen and (max-width: 650px) {
+    .pointer {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+    .main-img {
+      background-image: url('https://i.ibb.co/k14d9YX/MOBILE.png');
+
+    }
+
+    .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+
+    .arrow {
+    font-size: 16px;
+    }
+
+  }
 </style>
