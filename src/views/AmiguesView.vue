@@ -59,7 +59,7 @@ import FooterComp from '../components/FooterComp.vue'
   .main-img {
     width: 100%;
     margin-bottom: 40px;
-    height: 846px;
+    height: 800px;
     border-radius: 30px;
     background-image: url('https://i.ibb.co/z7f3g0S/Recurso-95-2x-1.png');
     background-position: center;
@@ -175,12 +175,25 @@ import FooterComp from '../components/FooterComp.vue'
 
 @media only screen and (max-width: 1650px) {
   .main-img {
-    height: 600px;
+    height: 550px;
   }
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
 }
 
 
   @media only screen and (max-width: 1300px) {
+    .main-img {
+      height: 500px;
+    }
+
     .info {
       flex-direction: column;
       gap: 40px;
@@ -191,10 +204,17 @@ import FooterComp from '../components/FooterComp.vue'
     }
   }
 
-  @media only screen and (max-width: 1000px) {
+    
+
+  @media only screen and (max-width: 850px) {
     .main-img {
       height: 534px;
+      border-radius: 20px;
     }
+
+    .info {
+    margin-bottom: 40px;
+  }
 
     .data p {
       font-size: 18px;
@@ -204,30 +224,42 @@ import FooterComp from '../components/FooterComp.vue'
       font-size: 18px;
     }
 
-    .arrow {
-    font-size: 18px;
-    }
+    .extra-imgs {
+    margin-bottom: 20px;
   }
 
-  @media only screen and (max-width: 750px) {
+  .extra-imgs img{
+    border-radius: 20px;
+  }
+
+  .triptic {
+    margin-bottom: 20px;
+  }
+
+  .triptic img {
+    
+    border-radius: 20px;
+  }
+
+  .cards img {
+    border-radius: 20px;
+  }
+  
+
+  @media only screen and (max-width: 650px) {
+    
     .mans-amigues {
       margin: 40px 7.3% 40px 7.3%;
     }
-  }
 
-  @media only screen and (max-width: 500px) {
-    
     .main-img {
       height: 450px;
       border-radius: 20px;
     }
 
     .extra-imgs {
-    width: 100%;
-    display: grid;
     grid-template-columns: auto 20px auto;
     grid-template-rows: auto 20px auto 20px auto;
-    margin-bottom: 40px;
   }
 
   .x1 {
@@ -259,12 +291,9 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
 
-    .triptic img {
-      border-radius: 20px;
+    .arrow {
+    font-size: 16px;
     }
-
-    .cards img {
-      border-radius: 20px;
-    }
+  }
   }
 </style>

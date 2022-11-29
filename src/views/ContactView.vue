@@ -201,7 +201,7 @@ const sendMessage = () => {
     color: #E61933;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1650px) {
   .contact {
     flex-direction: column-reverse;
   }
@@ -283,6 +283,11 @@ const sendMessage = () => {
     grid-template-rows: 20px auto 20px auto 20px auto 20px auto 20px auto 20px;
     border-radius: 20px;
   }
+
+  .text p {
+    font-size: 16px;
+  }
+
 }
 
 </style>

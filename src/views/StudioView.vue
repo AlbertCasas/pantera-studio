@@ -459,6 +459,10 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
   }
 
+  #video {
+    border-radius: 20px;
+  }
+
   .text {
     width: 100%;
   }

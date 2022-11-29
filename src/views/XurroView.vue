@@ -62,7 +62,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    height: 846px;
+    height: 800px;
     margin-bottom: 40px;
     border-radius: 30px;
     background-image: url('https://i.ibb.co/2Sr8WWw/Recurso-53.png');
@@ -210,12 +210,26 @@ import FooterComp from '../components/FooterComp.vue'
 
 @media only screen and (max-width: 1650px) {
   .main-img {
-    height: 600px;
+    height: 550px;
   }
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
 }
 
 
-@media only screen and (max-width: 1300px) {
+
+  @media only screen and (max-width: 1300px) {
+    .main-img {
+      height: 500px;
+    }
+
     .info {
       flex-direction: column;
       gap: 40px;
@@ -225,13 +239,19 @@ import FooterComp from '../components/FooterComp.vue'
       width: 100%;
     }
 
-    
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 850px) {
     .main-img {
-      height: 534px;
+      height: 450px;
+      border-radius: 20px;
+      background-image: url('https://i.ibb.co/rxjbzDh/tablet-xurru.png');
     }
+
+    .info {
+    margin-bottom: 40px;
+  }
+
 
     .data p {
       font-size: 18px;
@@ -239,26 +259,6 @@ import FooterComp from '../components/FooterComp.vue'
 
     .text p {
       font-size: 18px;
-    }
-
-    .arrow {
-    font-size: 18px;
-    }
-  }
-
-  @media only screen and (max-width: 750px) {
-    .cal-xurro {
-      margin: 40px 7.3% 40px 7.3%;
-    }
-
-  }
-
-
-  @media only screen and (max-width: 500px) {
-
-    .main-img {
-      height: 450px;
-      border-radius: 20px;
     }
 
     .img-grid {
@@ -271,8 +271,43 @@ import FooterComp from '../components/FooterComp.vue'
     border-radius: 20px;
   }
 
+  .mosaic {
+    gap: 20px;
+  }
+
   .mosaic img{
     border-radius: 20px;
+  }
+
+  }
+
+
+  @media only screen and (max-width: 650px) {
+
+    .cal-xurro {
+      margin: 40px 7.3% 40px 7.3%;
+    }
+
+    .main-img {
+      height: 450px;
+    }
+
+    .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+  .arrow {
+    font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-img {
+    background-image: url('https://i.ibb.co/F58x9rV/mobile-mobile.png');
   }
 }
 

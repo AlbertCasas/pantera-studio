@@ -3,7 +3,6 @@
     <NavBar />
     <div class="breathe">
       <div class="main-img">
-        <img src="https://i.ibb.co/gtnJtQK/Recurso-54.png" alt="main">
       </div>
       <div class="info">
         <div class="data">
@@ -27,7 +26,6 @@
         <img class="f2" src="https://i.ibb.co/7rHjML5/Recurso-67.png" alt="breathe">
       </div>
       <div class="secondary-img">
-        <img src="https://i.ibb.co/QbXVmhX/AD-Buisiness-Cards.png" alt="main">
       </div>
       <div class="arrows">
         <RouterLink to="/work/cerealbox" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
@@ -53,6 +51,10 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
     margin-bottom: 40px;
     border-radius: 30px;
+    height: 800px;
+    background-image: url('https://i.ibb.co/tLgs9cx/Recurso-131.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .main-img img {
@@ -92,8 +94,16 @@ import FooterComp from '../components/FooterComp.vue'
   .flex {
     width: 100%;
     margin-bottom: 40px;
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: auto 40px auto;
+  }
+
+  .f1 {
+    grid-column: 1/2;
+  }
+
+  .f2 {
+    grid-column: 3/4;
   }
 
   .flex img {
@@ -115,6 +125,11 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
     margin-bottom: 80px;
     border-radius: 30px;
+    background-image: url('https://i.ibb.co/Nr6XLL2/AD-Buisiness-Cards.png');
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .secondary-img img {
@@ -138,5 +153,107 @@ import FooterComp from '../components/FooterComp.vue'
   .arrow span:hover {
     color: #E61933;
   }
+
+  @media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 550px;
+  }
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
+
+    .secondary-img {
+      height: 550px;
+    }
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+    .main-img {
+      height: 500px;
+    }
+
+    
+    .info {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .text {
+      width: 100%;
+    }
+
+    .secondary-img {
+      height: 500px;
+    }
+
+  }
+
+  @media only screen and (max-width: 850px) {
+    .main-img {
+      height: 450px;
+      border-radius: 20px;
+      background-image: url('https://i.ibb.co/1RBPMpf/Recurso-129.png');
+      background-position-y: 32%;
+      
+    }
+
+    .info {
+    margin-bottom: 40px;
+  }
+
+    .data p {
+      font-size: 18px;
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+
+    .flex {
+      grid-template-columns: auto 20px auto;
+      margin-bottom: 20px;
+    }
+
+    .flex img {
+      border-radius: 20px;
+    }
+
+    .secondary-img {
+      height: 450px;
+      border-radius: 20px;
+    }
+
+
+    
+  }
+
+  @media only screen and (max-width: 650px) {
+    .breathe {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+
+    .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+
+    .arrow {
+    font-size: 16px;
+    }
+
+  }
+
 
 </style>

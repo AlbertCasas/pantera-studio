@@ -62,7 +62,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    height: 846px;
+    height: 800px;
     margin-bottom: 40px;
     border-radius: 30px;
     background-image: url('https://i.ibb.co/FmYC9Lc/Recurso-85.png');
@@ -175,11 +175,26 @@ import FooterComp from '../components/FooterComp.vue'
 
 @media only screen and (max-width: 1650px) {
   .main-img {
-    height: 600px;
+    height: 550px;
   }
-}
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
+  }
+
 
   @media only screen and (max-width: 1300px) {
+    .main-img {
+      height: 500px;
+    }
+
+    
     .info {
       flex-direction: column;
       gap: 40px;
@@ -193,7 +208,7 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto 40px auto;
     grid-template-rows: auto 40px auto;
     
   }
@@ -226,10 +241,15 @@ import FooterComp from '../components/FooterComp.vue'
   }
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 850px) {
     .main-img {
-      height: 534px;
+      height: 450px;
+      border-radius: 20px;
     }
+
+    .info {
+    margin-bottom: 40px;
+  }
 
     .data p {
       font-size: 18px;
@@ -238,24 +258,8 @@ import FooterComp from '../components/FooterComp.vue'
     .text p {
       font-size: 18px;
     }
-  }
-
-  @media only screen and (max-width: 750px) {
-    .mobility {
-    margin: 40px 7.3% 40px 7.3%;
-  }
-
-    .main-img {
-      background-image: url('https://i.ibb.co/RQT1Xh3/Recurso-94.png');
-      background-position: center;
-      background-size: initial;
-      height: 450px;
-      
-      border-radius: 20px;
-    }
 
     .map {
-      border-radius: 20px;
       margin-bottom: 20px;
     }
 
@@ -263,9 +267,12 @@ import FooterComp from '../components/FooterComp.vue'
       border-radius: 20px;
     }
 
+
     .extra-imgs {
-      grid-template-rows: auto 20px auto;
-    }
+    grid-template-columns: auto 20px auto;
+    grid-template-rows: auto 20px auto;
+  }
+
 
     .small {
       border-radius: 20px;
@@ -283,9 +290,57 @@ import FooterComp from '../components/FooterComp.vue'
       border-radius: 20px;
     }
 
-    .arrow {
-    font-size: 18px;
+
+  .x1 {
+    border-radius: 20px;
+  }
+
+  .x1 img{
+    border-radius: 20px;
+  }
+
+  .x2 {
+    border-radius: 20px;
+  }
+
+  .x2 img{
+    border-radius: 20px;
+  }
+  
+
+  .x3 {
+    border-radius: 20px;
+  }
+
+  .x3 img {
+    border-radius: 20px;
+  }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .mobility {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+    .main-img {
+      background-image: url('https://i.ibb.co/RQT1Xh3/Recurso-94.png');
+      background-position: center;
+      background-size: initial;
     }
+
+    .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+
+    .arrow {
+    font-size: 16px;
+    }
+
   }
 
 @media only screen and (max-width: 500px) {

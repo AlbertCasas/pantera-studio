@@ -71,7 +71,7 @@ const muted = ref(true);
     width: 100%;
     margin-bottom: 40px;
     border-radius: 30px;
-    height: 846px;
+    height: 800px;
     background-image: url('https://i.ibb.co/XW1Fjbd/Recurso-99.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -210,13 +210,23 @@ const muted = ref(true);
 
 @media only screen and (max-width: 1650px) {
   .main-img {
-    height: 600px;
+    height: 550px;
   }
-}
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
+  }
 
 
 @media only screen and (max-width: 1300px) {
   .main-img {
+    height: 500px;
     background-position: 65%;
   }
 
@@ -231,10 +241,16 @@ const muted = ref(true);
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 850px) {
     .main-img {
-      height: 534px;
+      height: 450px;
+      border-radius: 20px;
     }
+
+    .info {
+    margin-bottom: 40px;
+  }
+
 
     .data p {
       font-size: 18px;
@@ -243,48 +259,14 @@ const muted = ref(true);
     .text p {
       font-size: 18px;
     }
-}
 
-
-@media only screen and (max-width: 750px)  {
-  .cereal {
-    margin: 40px 7.3% 40px 7.3%;
-  }
-
-  .main-img {
-    background-position: rigth;
-    height: 450px;
-    
-  }
-
-  .main-img h1 {
-    left: 10px;
-    top: 10px;
-    color: white;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .arrow {
-    font-size: 18px;
-    }
-  
-}
-
-@media only screen and (max-width: 500px) {
-  
-  .main-img {
-    background-image: url('https://i.ibb.co/fDNj2Qj/cereal-mobile.png');
-    background-position: center;
-    border-radius: 20px;
-  }
-
-  .main-img h1 {
-    display: none;
-  }
-
-  .grid {
+    .grid {
     grid-template-columns: auto 20px auto 20px auto;
+    margin-bottom: 20px;
+  }
+
+  #video {
+    border-radius: 20px;
   }
 
   .grid img {
@@ -303,5 +285,38 @@ const muted = ref(true);
   .b3 {
     margin: 40px 0;
   }
+}
+
+
+
+@media only screen and (max-width: 650px)  {
+  .cereal {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+  .main-img {
+    background-position: rigth;
+  }
+
+  .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+  .arrow {
+    font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .main-img {
+    background-image: url('https://i.ibb.co/fDNj2Qj/cereal-mobile.png');
+    background-position: center;
+  }
+
 }
 </style>

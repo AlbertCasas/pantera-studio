@@ -3,7 +3,6 @@
     <NavBar />
     <div class="pantera">
       <div class="main-img">
-        <img src="https://i.ibb.co/94nK9RC/Recurso-52.png" alt="main">
       </div>
       <div class="info">
         <div class="data">
@@ -44,6 +43,11 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
     margin-bottom: 40px;
     border-radius: 30px;
+    height: 800px;
+    background-image: url('https://i.ibb.co/94nK9RC/Recurso-52.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .main-img img {
@@ -106,6 +110,89 @@ import FooterComp from '../components/FooterComp.vue'
 
   .arrow span:hover {
     color: #E61933;
+  }
+
+  @media only screen and (max-width: 1650px) {
+  .main-img {
+    height: 550px;
+  }
+
+  .data p {
+      font-size: 20px;
+    }
+
+
+  .text p {
+      font-size: 20px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+    .main-img {
+      height: 500px;
+    }
+
+    
+    .info {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .text {
+      width: 100%;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 850px) {
+    .main-img {
+      height: 450px;
+      border-radius: 20px;
+      background-image: url('https://i.ibb.co/rxPPCXm/tablet-pantera.png');
+      
+    }
+
+    .info {
+    margin-bottom: 40px;
+  }
+
+    .data p {
+      font-size: 18px;
+    }
+
+    .text p {
+      font-size: 18px;
+    }
+
+    .secondary-img img {
+      border-radius: 20px;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 650px) {
+    .pantera {
+    margin: 40px 7.3% 40px 7.3%;
+  }
+
+
+    .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+
+    .arrow {
+    font-size: 16px;
+    }
+
   }
 
 </style>
