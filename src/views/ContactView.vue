@@ -210,12 +210,30 @@ const sendMessage = () => {
     width: 100%;
   }
 
+  .box input {
+    padding: .7rem;
+    font-size: 20px;
+  }
+
+  .box textarea {
+    padding: .7rem;
+    font-size: 20px;
+  }
+
   .text {
     width: 100%;
   }
+
+  .text p {
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
 
   .box {
     grid-template-columns: 30px calc(50% - 45px) 30px calc(50% - 45px) 30px;
