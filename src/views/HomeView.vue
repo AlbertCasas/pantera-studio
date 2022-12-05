@@ -557,6 +557,8 @@ h2 {
 
 .contact {
   font-size: 18px;
+  height: 40px;
+  width: 180px;
 }
 
 .swiper-slide img {

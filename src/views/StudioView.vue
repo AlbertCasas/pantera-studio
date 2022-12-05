@@ -552,7 +552,11 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   .steps {
-  grid-template-rows: auto 20px auto 42px auto 20px auto 20px auto 20px auto 20px auto; 
+  grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto 20px auto; 
+}
+
+.step h2 {
+  margin-bottom: 10px;
 }
 
   .step {

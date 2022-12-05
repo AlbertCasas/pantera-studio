@@ -24,11 +24,19 @@
         </div>
       </div>
       <div class="video">
-        <i v-if="playing === true" class="fa-solid fa-pause"></i>
-        <i v-if="playing === false" class="fa-solid fa-play"></i>
-        <i v-if="muted === true" class="fa-solid fa-volume"></i>
-        <i v-if="muted === false" class="fa-solid fa-volume-xmark"></i>
-        <video autoplay muted loop id="video">
+        <div class="playing">
+          <button class="play-pause" @click="play()">
+            <i v-if="playing === true" @click="playing = !playing;" class="fa-solid fa-pause play-pause"></i>
+            <i v-else @click="playing = !playing;" class="fa-solid fa-play play-pause"></i>
+          </button>
+        </div>
+        <div class="sound">
+          <button class="mute-unmute">
+            <i v-if="muted === true" @click="muted = !muted" class="fa-solid fa-volume-high"></i>
+            <i v-else @click="muted = !muted" class="fa-solid fa-volume-xmark"></i>
+          </button>
+        </div>
+        <video autoplay muted loop controls id="video" ref="video" :srcObject.prop="video">
           <source src="../assets/video/Cereal-AV.mp4">
         </video>
       </div>
@@ -58,6 +66,20 @@ import {ref} from "vue"
 
 const playing = ref(true);
 const muted = ref(true);
+const video = document.querySelector('#video')
+
+
+const play = () => {
+  this.$refs.video.play()
+  playing.value = true
+}
+    
+const pause = () => {
+  this.$refs.video.pause()
+  playing.value = false
+}
+  
+
 
 </script>
 
@@ -110,32 +132,49 @@ const muted = ref(true);
 
   .video {
     margin-bottom: 40px;
-    width: 35%;
+    width: 31.5%;
     display: flex;
     justify-content: flex-end;
     position: relative;
   }
 
-  .fa-solid {
+  .playing {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sound {
+    width: 100%;
+    height: 100%;
+  }
+
+  .play-pause {
     position: absolute;
     z-index: 99;
     background-color: transparent;
     cursor: pointer;
-  }
-
-  .fa-pause {
+    font-size: 25px;
     color: #0d0d0d;
-    font-size: 20px;
-    bottom: 20px;
-    left: 20px;
+    bottom: 15px;
+    left: 10px;
+    border: none;
   }
-
-  .fa-volume {
-    color: #0d0d0d;
-    font-size: 20px;
-    bottom: 20px;
-    left: 20px;
+  
+  .mute-unmute {
+    position: absolute;
     z-index: 99;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    color: #0d0d0d;
+    bottom: 27px;
+    right: 15px;
+    border: none;
+  }
+
+  .mute-unmute i {
+    background-color: transparent;
+    
   }
 
   #video {

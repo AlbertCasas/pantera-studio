@@ -284,6 +284,24 @@ const sendMessage = () => {
     border-radius: 20px;
   }
 
+  .box input {
+    height: 20px;
+    padding: .7rem;
+    border-radius: 10px;
+  }
+
+  .box textarea {
+    border-radius: 10px;
+    height: 150px;
+    padding: .7rem;
+  }
+
+  .button {
+    height: 30px;
+    width: 120px;
+    font-size: 15px;
+  }
+
   .text p {
     font-size: 16px;
   }

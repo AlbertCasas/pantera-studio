@@ -85,7 +85,7 @@ const toggleBurger = () => {
     gap: 40px;
     background-color: #0d0d0d;
     justify-content: center;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 .icons i {
