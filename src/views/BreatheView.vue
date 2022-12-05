@@ -197,7 +197,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   @media only screen and (max-width: 850px) {
     .main-img {
-      height: 450px;
+      height: 900px;
       border-radius: 20px;
       background-image: url('https://i.ibb.co/1RBPMpf/Recurso-129.png');
       background-position-y: 32%;

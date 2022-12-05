@@ -188,7 +188,7 @@ const sendMessage = () => {
 
 .icons {
     color: #0d0d0d;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .icons a {
@@ -230,9 +230,6 @@ const sendMessage = () => {
     margin-bottom: 20px;
     }
 
-  .icon {
-    font-size: 30px;
-  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -288,9 +285,7 @@ const sendMessage = () => {
     font-size: 18px;
   }
 
-  .icons {
-    font-size: 25px;
-  }
+
 }
 
 @media only screen and (max-width: 650px) {

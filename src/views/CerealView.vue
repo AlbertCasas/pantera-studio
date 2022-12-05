@@ -62,7 +62,7 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
 import FooterComp from '../components/FooterComp.vue'
-import {ref} from "vue"
+
 
 // const playing = ref(true);
 // const muted = ref(true);
@@ -282,7 +282,7 @@ import {ref} from "vue"
 
 @media only screen and (max-width: 850px) {
     .main-img {
-      height: 450px;
+      height: 900px;
       border-radius: 20px;
     }
 

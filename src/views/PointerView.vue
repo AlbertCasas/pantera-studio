@@ -239,7 +239,7 @@ import FooterComp from "../components/FooterComp.vue";
 
   @media only screen and (max-width: 850px) {
     .main-img {
-      height: 450px;
+      height: 900px;
       border-radius: 20px;
     }
 
