@@ -227,7 +227,8 @@ const sendMessage = () => {
 
   .text p {
     font-size: 20px;
-  }
+    margin-bottom: 20px;
+    }
 
   .icon {
     font-size: 30px;
