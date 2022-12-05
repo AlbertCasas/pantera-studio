@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="video">
-        <div class="playing">
+        <!-- <div class="playing">
           <button class="play-pause" @click="play()">
             <i v-if="playing === true" @click="playing = !playing;" class="fa-solid fa-pause play-pause"></i>
             <i v-else @click="playing = !playing;" class="fa-solid fa-play play-pause"></i>
@@ -35,7 +35,7 @@
             <i v-if="muted === true" @click="muted = !muted" class="fa-solid fa-volume-high"></i>
             <i v-else @click="muted = !muted" class="fa-solid fa-volume-xmark"></i>
           </button>
-        </div>
+        </div> -->
         <video autoplay muted loop controls id="video" ref="video" :srcObject.prop="video">
           <source src="../assets/video/Cereal-AV.mp4">
         </video>
@@ -64,20 +64,20 @@ import NavBar from '../components/NavBar.vue'
 import FooterComp from '../components/FooterComp.vue'
 import {ref} from "vue"
 
-const playing = ref(true);
-const muted = ref(true);
-const video = document.querySelector('#video')
+// const playing = ref(true);
+// const muted = ref(true);
+// const video = document.querySelector('#video')
 
 
-const play = () => {
-  this.$refs.video.play()
-  playing.value = true
-}
+// const play = () => {
+//   this.$refs.video.play()
+//   playing.value = true
+// }
     
-const pause = () => {
-  this.$refs.video.pause()
-  playing.value = false
-}
+// const pause = () => {
+//   this.$refs.video.pause()
+//   playing.value = false
+// }
   
 
 
