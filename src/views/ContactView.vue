@@ -145,8 +145,8 @@ const sendMessage = () => {
 
 
 .button {
-  height: 52px;
-  width: 232px;
+  height: 60px;
+  width: 240px;
   text-align: center;
   border: none;
   background-color: #0d0d0d;
