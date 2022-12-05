@@ -218,6 +218,7 @@ const sendMessage = () => {
   .box textarea {
     padding: .7rem;
     font-size: 20px;
+    height: 200px;
   }
 
   .text {
@@ -291,7 +292,7 @@ const sendMessage = () => {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .contact {
     margin: 40px 7.3% 40px 7.3%;
   }
@@ -304,14 +305,12 @@ const sendMessage = () => {
 
   .box input {
     height: 20px;
-    padding: .7rem;
     border-radius: 10px;
   }
 
   .box textarea {
     border-radius: 10px;
     height: 150px;
-    padding: .7rem;
   }
 
   .button {
@@ -322,6 +321,10 @@ const sendMessage = () => {
 
   .text p {
     font-size: 16px;
+  }
+
+  .icons {
+    font-size: 20px;
   }
 
 }
