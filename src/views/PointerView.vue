@@ -41,9 +41,9 @@
             <img class="bg6 bg" src="https://i.ibb.co/3d4kbRJ/Sin-t-tulo-1-07.png" alt="cartoon">
         </div>
         <div class="big-images">
-            <img class="bi" src="https://i.ibb.co/MhxSGqw/Sin-t-tulo-1-08.png" alt="bottles">
-            <img class="bi" src="https://i.ibb.co/FXG5VQn/Sin-t-tulo-1-10.png" alt="bottles">
-            <img class="bi" src="https://i.ibb.co/167hkTn/Sin-t-tulo-1-09.png" alt="bottles">
+            <img class="bi" src="https://i.ibb.co/1z7kqJm/01.jpg" alt="bottles">
+            <img class="bi" src="https://i.ibb.co/QF5smXz/03.jpg" alt="bottles">
+            <img class="bi" src="https://i.ibb.co/YBxRb64/02.jpg" alt="bottles">
         </div>
         <div class="arrows">
             <RouterLink to="/work/pantera" class="arrow"
@@ -238,13 +238,20 @@ import FooterComp from "../components/FooterComp.vue";
   }
 
   @media only screen and (max-width: 850px) {
+
+    .pointer {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
+      background-image: url('https://i.ibb.co/hHkqj7q/TABLET.png');
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
 
     .data p {
@@ -257,33 +264,29 @@ import FooterComp from "../components/FooterComp.vue";
 
     .small-grid {
     grid-template-columns: auto;
-    grid-template-rows: auto 20px auto;
-    margin-bottom: 20px;
+    grid-template-rows: auto 30px auto;
+    margin-bottom: 30px;
 }
 
 .sg1 {
     grid-column:1/2;
     grid-row: 1/2;
-    border-radius: 20px;
 }
 
 .sg2 {
     grid-column:1/2;
     grid-row: 3/4;
-    border-radius: 20px;
 }
 
 .big-grid {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto;
-    margin-bottom: 20px;
+    grid-template-rows: auto 30px auto 30px auto 30px auto 30px auto 30px auto;
+    margin-bottom: 30px;
 }
 
-.bg {
-    border-radius: 20px;
-}
+
 
 .bg1 {
     grid-column:1/2;
@@ -316,25 +319,28 @@ import FooterComp from "../components/FooterComp.vue";
 }
 
 .big-images {
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
-.bi {
-    width: 100%;
-    border-radius: 20px;
-}
 
     
   }
 
   @media only screen and (max-width: 650px) {
     .pointer {
-    margin: 40px 7.3% 40px 7.3%;
+    margin: 20px 7.3% 40px 7.3%;
   }
 
     .main-img {
+      height: 500px;
       background-image: url('https://i.ibb.co/k14d9YX/MOBILE.png');
+      border-radius: 20px;
+    }
 
+    .info {
+      margin-bottom: 40px;
+      gap: 20px;
     }
 
     .data p {
@@ -345,6 +351,30 @@ import FooterComp from "../components/FooterComp.vue";
       font-size: 16px;
     }
 
+    .small-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto 20px auto;
+    margin-bottom: 20px;
+    }
+
+    .small-grid img {
+      border-radius: 20px;
+    }
+
+    .big-grid {
+    grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto;
+    margin-bottom: 20px;
+}
+
+
+    .bg {
+    border-radius: 20px;
+}
+
+.big-images {
+  gap: 20px;
+  margin-bottom: 40px;
+}
 
     .arrow {
     font-size: 16px;

@@ -15,10 +15,10 @@
           <p>As part of the Masnou Educational Project, the City Council&#39;s objective was to promote
             different initiatives to Encourage citizens to travel in a sustainable way within the
             municipality. One of these initiatives was to provide tools that would allow this goal.</p>
-          <br><br>
+          <br>
           <p>With this premise we are commissioned to create a map of Masnou that provides information
               on the distances and time required between the main locations of the town on foot.</p>
-          <br><br>
+          <br>
           <p>Our work, in collaboration with ALB Ecosystem, has been to identify points of interest,
             calculate distances and times and generate the graphic image of the project, inspired by
             metro maps. This initiative is based on the principles of Agenda 2030 of the EU, which
@@ -34,7 +34,7 @@
           <img src="https://i.ibb.co/GvzjWXf/Recurso-4.png" alt="Recurso-4" border="0">
         </div>
         <div class="x2">
-          <img src="https://i.ibb.co/zWdPzjM/triptic.png" alt="triptic">
+          <img src="https://i.ibb.co/8bsY27K/06.jpg" alt="triptic">
         </div>
         <div class="x3">
           <img src="https://i.ibb.co/7pjTx1t/IMG-20220918-WA0007.jpg" alt="IMG-20220918-WA0007" border="0">
@@ -242,13 +242,18 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   @media only screen and (max-width: 850px) {
+    .mobility {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
 
     .data p {
@@ -260,72 +265,32 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .map {
-      margin-bottom: 20px;
-    }
-
-    .map img {
-      border-radius: 20px;
+      margin-bottom: 30px;
     }
 
 
     .extra-imgs {
-    grid-template-columns: auto 20px auto;
-    grid-template-rows: auto 20px auto;
+    grid-template-columns: auto 30px auto;
+    grid-template-rows: auto 30px auto;
+    margin-bottom: 60px;
   }
 
-
-    .small {
-      border-radius: 20px;
-    }
-
-    .small img {
-      border-radius: 20px;
-    }
-
-    .big {
-      border-radius: 20px;
-    }
-
-    .big img {
-      border-radius: 20px;
-    }
-
-
-  .x1 {
-    border-radius: 20px;
-  }
-
-  .x1 img{
-    border-radius: 20px;
-  }
-
-  .x2 {
-    border-radius: 20px;
-  }
-
-  .x2 img{
-    border-radius: 20px;
-  }
-  
-
-  .x3 {
-    border-radius: 20px;
-  }
-
-  .x3 img {
-    border-radius: 20px;
-  }
   }
 
   @media only screen and (max-width: 650px) {
     .mobility {
-    margin: 40px 7.3% 40px 7.3%;
+    margin: 20px 7.3% 40px 7.3%;
   }
 
     .main-img {
-      background-image: url('https://i.ibb.co/RQT1Xh3/Recurso-94.png');
+      height: 500px;
+      background-image: url('https://i.ibb.co/T4wjxHW/Recurso-97.png');
       background-position: center;
-      background-size: initial;
+    }
+
+    .info {
+      margin-bottom: 40px;
+      gap: 20px;
     }
 
     .data p {
@@ -336,6 +301,31 @@ import FooterComp from '../components/FooterComp.vue'
       font-size: 16px;
     }
 
+    .map {
+      margin-bottom: 20px;
+    }
+
+    .map img {
+      border-radius: 20px;
+    }
+
+    .extra-imgs {
+    grid-template-columns: auto 20px auto;
+    grid-template-rows: auto 20px auto;
+    margin-bottom: 40px;
+  }
+
+  .x1 img{
+    border-radius: 20px;
+  }
+
+  .x2 img{
+    border-radius: 20px;
+  }
+
+  .x3 img {
+    border-radius: 20px;
+  }
 
     .arrow {
     font-size: 16px;
@@ -343,10 +333,5 @@ import FooterComp from '../components/FooterComp.vue'
 
   }
 
-@media only screen and (max-width: 500px) {
-  .main-img {
-    background-image: url('https://i.ibb.co/T4wjxHW/Recurso-97.png');
-  }
-}
 
 </style>

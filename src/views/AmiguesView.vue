@@ -17,7 +17,7 @@
           services to Mans Amigues, helping them with the graphic image of the association in both
           digital and printed media. One of our most enriching projects that allows us to help the kind
           people from Mans Amigues to help other people in difficult times.</p>
-          <br><br>
+          <br>
           <p>Inspired by the philosophy of the association, that wounds are part of oneself, we use the art
           of kintsugi as a metaphor in the logo as well as representing the lines in the friendly hands
           they offer. Together with a turquoise as their main color, we aimed for a clean and calming
@@ -34,7 +34,7 @@
         <img src="https://i.ibb.co/48N8D1r/TRYFOLD.png" alt="triptic">
       </div>
       <div class="cards">
-        <img src="https://i.ibb.co/pJcRw4R/CARD.png" alt="cards">
+        <img src="https://i.ibb.co/fvVbrhK/05.jpg" alt="cards">
       </div>
       <div class="arrows">
         <RouterLink to="/work/calxurro" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
@@ -207,13 +207,19 @@ import FooterComp from '../components/FooterComp.vue'
     
 
   @media only screen and (max-width: 850px) {
+    .mans-amigues {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
+      margin-bottom: 30px;
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
 
     .data p {
@@ -225,41 +231,52 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .extra-imgs {
-    margin-bottom: 20px;
+      grid-template-columns: auto 30px auto auto;
+      grid-template-rows: auto 30px auto;
+      margin-bottom: 30px;
   }
 
-  .extra-imgs img{
-    border-radius: 20px;
-  }
 
   .triptic {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
-  .triptic img {
-    
-    border-radius: 20px;
+  .cards {
+    margin-bottom: 60px;
   }
 
-  .cards img {
-    border-radius: 20px;
-  }
+}
   
 
   @media only screen and (max-width: 650px) {
     
     .mans-amigues {
-      margin: 40px 7.3% 40px 7.3%;
+      margin: 20px 7.3% 40px 7.3%;
     }
 
     .main-img {
-      height: 450px;
+      height: 500px;
       border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      margin-bottom: 40px;
+      gap: 20px;
+    }
+
+    .data p {
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 16px;
     }
 
     .extra-imgs {
     grid-template-columns: auto 20px auto;
     grid-template-rows: auto 20px auto 20px auto;
+    margin-bottom: 20px;
   }
 
   .x1 {
@@ -290,10 +307,19 @@ import FooterComp from '../components/FooterComp.vue'
     width: 100%;
   }
 
+  .triptic {
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    margin-bottom: 40px;
+  }
+
+
 
     .arrow {
     font-size: 16px;
     }
   }
-  }
+  
 </style>

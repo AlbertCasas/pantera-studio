@@ -16,7 +16,7 @@
           the sale of churros, a food with a long tradition in Catalonia. However, like its founders, Cal
           Xurru is many things: a churrería, a roaster, a coffee shop… A place to expirience and enjoy
           both with family and friends.</p>
-          <br><br>
+          <br>
           <p>Our goal has been to create a flexible image that can be adapted to the different aspects of
           the brand without losing a fun and playful essence. Using traditional colours, we kept a
           modern brand capable to change with the times and with whatever new adventure they
@@ -36,9 +36,9 @@
       </div>
       <div class="mosaic">
         <img src="https://i.ibb.co/MDmGLkQ/Recurso-40.png" alt="mosaic">
-        <img src="https://i.ibb.co/rvG3jvw/3-Coffee-Cup-Mockups-2.png" alt="cups">
-        <img src="https://i.ibb.co/dJYF0Q1/Paper-Bag-1.png" alt="bag">
-        <img src="https://i.ibb.co/Q8frdxB/Business-Card-Mockup.png" alt="cards">
+        <img src="https://i.ibb.co/vwBL78H/3-Coffee-Cup-Mockups-2.jpg" alt="cups">
+        <img src="https://i.ibb.co/Wf5Xb3V/Paper-Bag-1.jpg" alt="bag">
+        <img src="https://i.ibb.co/jHdygG6/07.jpg" alt="cards">
       </div>
       <div class="arrows">
         <RouterLink to="/work/mobility" class="arrow"><i class="fa-sharp fa-solid fa-caret-left"></i><span>&nbsp; PREVIOUS</span></RouterLink>
@@ -242,14 +242,20 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   @media only screen and (max-width: 850px) {
+    .cal-xurro {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
       background-image: url('https://i.ibb.co/rxjbzDh/tablet-xurru.png');
+      margin-bottom: 30px;
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
 
 
@@ -262,34 +268,36 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .img-grid {
-    grid-template-columns: auto 20px auto 20px auto;
-    grid-template-rows: auto 20px auto 20px auto;
-    margin-bottom: 20px;
+    grid-template-columns: auto 30px auto 30px auto;
+    grid-template-rows: auto 30px auto 30px auto;
+    margin-bottom: 30px;
   }
 
-  .img-grid img {
-    border-radius: 20px;
-  }
-
+  
   .mosaic {
-    gap: 20px;
+    margin-bottom: 60px;
+    gap: 30px;
   }
 
-  .mosaic img{
-    border-radius: 20px;
-  }
+  
 
   }
 
 
   @media only screen and (max-width: 650px) {
-
     .cal-xurro {
-      margin: 40px 7.3% 40px 7.3%;
+      margin: 20px 7.3% 40px 7.3%;
     }
 
     .main-img {
-      height: 450px;
+      height: 500px;
+      background-image: url('https://i.ibb.co/F58x9rV/mobile-mobile.png');
+      border-radius: 20px;
+    }
+
+    .info {
+      margin-bottom: 40px;
+      gap: 20px;
     }
 
     .data p {
@@ -300,16 +308,30 @@ import FooterComp from '../components/FooterComp.vue'
       font-size: 16px;
     }
 
+    .img-grid {
+    grid-template-columns: auto 20px auto 20px auto;
+    grid-template-rows: auto 20px auto 20px auto;
+    margin-bottom: 20px;
+  }
+
+    .img-grid img {
+    border-radius: 20px;
+  }
+
+  .mosaic {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .mosaic img{
+    border-radius: 20px;
+  }
+
   .arrow {
     font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 500px) {
-  .main-img {
-    background-image: url('https://i.ibb.co/F58x9rV/mobile-mobile.png');
-  }
-}
 
   
 </style>

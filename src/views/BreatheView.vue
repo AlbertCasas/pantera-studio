@@ -15,7 +15,7 @@
           connecting with oneself and the environment. Breathe is the result of all this and much more,
           a refuge where you can practice yoga, meet people and get to know your body in spaces
           connected with nature.</p>
-          <br><br>
+          <br>
           <p>The image designed for Breathe has as its protagonist the sun and the spaces it illuminates,
           maintaining a clean and minimalist aesthetic where the important thing is the sensations
           experienced and the connection between the mind, the body and the environment.</p>
@@ -111,21 +111,12 @@ import FooterComp from '../components/FooterComp.vue'
     border-radius: 30px;
   }
 
-  .boxes {
-    background-color: #3067f2;
-    width: 100%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 80px;
-  }
 
   .secondary-img {
     width: 100%;
     margin-bottom: 80px;
     border-radius: 30px;
-    background-image: url('https://i.ibb.co/Nr6XLL2/AD-Buisiness-Cards.png');
+    background-image: url('https://i.ibb.co/s537CGC/04.jpg');
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
@@ -196,16 +187,21 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   @media only screen and (max-width: 850px) {
+    .breathe {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
       background-image: url('https://i.ibb.co/1RBPMpf/Recurso-129.png');
-      background-position-y: 32%;
-      
+      background-position-y: 30%;
+      margin-bottom: 30px;
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
 
     .data p {
@@ -217,28 +213,33 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .flex {
-      grid-template-columns: auto 20px auto;
-      margin-bottom: 20px;
-    }
-
-    .flex img {
-      border-radius: 20px;
+      grid-template-columns: auto 30px auto;
+      margin-bottom: 30px;
     }
 
     .secondary-img {
       height: 450px;
-      border-radius: 20px;
+      margin-bottom: 60px;
     }
-
 
     
   }
 
   @media only screen and (max-width: 650px) {
     .breathe {
-    margin: 40px 7.3% 40px 7.3%;
+    margin: 20px 7.3% 40px 7.3%;
   }
 
+  .main-img {
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
 
     .data p {
       font-size: 16px;
@@ -251,6 +252,21 @@ import FooterComp from '../components/FooterComp.vue'
 
     .arrow {
     font-size: 16px;
+    }
+
+    .flex {
+      grid-template-columns: auto 20px auto;
+      margin-bottom: 20px;
+    }
+
+    .flex img {
+      border-radius: 20px;
+    }
+
+    .secondary-img {
+      height: 230px;
+      margin-bottom: 40px;
+      border-radius: 20px;
     }
 
   }

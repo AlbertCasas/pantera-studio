@@ -119,7 +119,7 @@ import FooterComp from '../components/FooterComp.vue'
 .main {
   display: flex;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .intro {
@@ -335,10 +335,17 @@ import FooterComp from '../components/FooterComp.vue'
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 850px) {
+
+  .studio {
+  margin: 30px 7.3% 60px 7.3%;
+}
+
+
   .main {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    margin-bottom: 60px;
   }
 
   .intro {
@@ -358,7 +365,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .services-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 
   .print {
@@ -381,12 +388,26 @@ import FooterComp from '../components/FooterComp.vue'
     width: 50%;
   }
 
+  .list li {
+    margin-bottom: 15px;
+  }
+
   .services-option {
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 60px;
   }
 
   .text p {
     font-size: 18px;
+  }
+
+  .services h1 {
+    margin-bottom: 30px;
+  }
+
+  .process h1 {
+    margin-bottom: 30px;
   }
 
   .explanation {
@@ -403,7 +424,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .steps {
   grid-template-columns: auto;
-  grid-template-rows: auto 40px auto 40px auto 40px auto 40px auto 40px auto 40px auto;
+  grid-template-rows: auto 30px auto 30px auto 30px auto 30px auto 30px auto 30px auto;
 }
 
 .step1 {
@@ -446,9 +467,14 @@ import FooterComp from '../components/FooterComp.vue'
 }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
   .studio {
-    margin: 40px 7.3% 40px 7.3%;
+    margin: 20px 7.3% 40px 7.3%;
+  }
+
+  .main {
+    gap: 20px;
+    margin-bottom: 40px;
   }
 
   .intro p {
@@ -476,6 +502,10 @@ import FooterComp from '../components/FooterComp.vue'
     margin-bottom: 20px;
   }
 
+  .services-content {
+    gap: 20px;
+  }
+
   .services-content h2 {
     font-size: 20px;
   }
@@ -493,7 +523,7 @@ import FooterComp from '../components/FooterComp.vue'
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: auto 20px auto;
-    grid-template-rows: auto 20px auto;
+    grid-template-rows: auto 10px auto;
   }
 
   .list li {
@@ -539,7 +569,7 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   .services-option {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 

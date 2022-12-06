@@ -233,6 +233,9 @@ const sendMessage = () => {
 }
 
 @media only screen and (max-width: 850px) {
+  .contact {
+    gap: 30px;
+  }
 
   .box {
     grid-template-columns: 30px calc(50% - 45px) 30px calc(50% - 45px) 30px;
@@ -283,14 +286,16 @@ const sendMessage = () => {
 
   .text p {
     font-size: 18px;
+    margin-bottom: 15px;
   }
 
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
   .contact {
     margin: 40px 7.3% 40px 7.3%;
+    gap: 20px;
   }
 
   .box {
@@ -310,13 +315,14 @@ const sendMessage = () => {
   }
 
   .button {
-    height: 30px;
-    width: 120px;
+    height: 40px;
+    width: 140px;
     font-size: 15px;
   }
 
   .text p {
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .icons {

@@ -14,33 +14,19 @@
           <p>We wanted to create a collection of different cereals since its a product with many fun
           opportunities regarding design. The project revolves around three thieves obsessed with
           some kind of relic for each one and their quest to steal it.</p>
-          <br><br>
+          <br>
           <p>Inspired by creatures from the forest, the mascots and the overall design keep a colorful and
           fun aesthetic since it is a product mainly for children. Each mascot and relic represents a
           different flavor cereal.</p>
-          <br><br>
+          <br>
           <p>The project has included the creation of the narrative around the product, the character
           design, the packaging design and a short spot for social media.</p>
         </div>
       </div>
-      <div class="video">
-        <!-- <div class="playing">
-          <button class="play-pause" @click="play()">
-            <i v-if="playing === true" @click="playing = !playing;" class="fa-solid fa-pause play-pause"></i>
-            <i v-else @click="playing = !playing;" class="fa-solid fa-play play-pause"></i>
-          </button>
-        </div>
-        <div class="sound">
-          <button class="mute-unmute">
-            <i v-if="muted === true" @click="muted = !muted" class="fa-solid fa-volume-high"></i>
-            <i v-else @click="muted = !muted" class="fa-solid fa-volume-xmark"></i>
-          </button>
-        </div> -->
+      <div class="grid">
         <video autoplay muted loop controls id="video" ref="video" :srcObject.prop="video">
           <source src="../assets/video/Cereal-AV.mp4">
         </video>
-      </div>
-      <div class="grid">
         <img class="g1" src="https://i.ibb.co/GQ7CXCj/Recurso-24.png" alt="golden">
         <img class="g2" src="https://i.ibb.co/cwhv3tn/Recurso-25.png" alt="rainbow">
         <img class="g3" src="https://i.ibb.co/cFtn76S/Recurso-23.png" alt="moon">
@@ -130,65 +116,23 @@ import FooterComp from '../components/FooterComp.vue'
     line-height: 120%;
   }
 
-  .video {
-    margin-bottom: 40px;
-    width: 31.5%;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-
-  .playing {
-    width: 100%;
-    height: 100%;
-  }
-
-  .sound {
-    width: 100%;
-    height: 100%;
-  }
-
-  .play-pause {
-    position: absolute;
-    z-index: 99;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 25px;
-    color: #0d0d0d;
-    bottom: 15px;
-    left: 10px;
-    border: none;
-  }
-  
-  .mute-unmute {
-    position: absolute;
-    z-index: 99;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 25px;
-    color: #0d0d0d;
-    bottom: 27px;
-    right: 15px;
-    border: none;
-  }
-
-  .mute-unmute i {
-    background-color: transparent;
-    
-  }
-
-  #video {
-    border-radius: 30px;
-    width: 100%;
-    clip-path: inset(1px 1px);
-  }
 
   .grid {
     width: 100%;
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: auto 40px auto 40px auto;
+    grid-template-rows: auto 40px auto;
   }
+
+  
+    #video {
+      width: 100%;
+      grid-column: 5/6;
+      grid-row: 1/2;
+      border-radius: 30px;
+      clip-path: inset(1px 1px);
+    }
 
   .grid img {
     width: 100%;
@@ -197,14 +141,17 @@ import FooterComp from '../components/FooterComp.vue'
 
   .g1 {
     grid-column: 1/2;
+    grid-row: 3/4;
   }
 
   .g2 {
     grid-column: 3/4;
+    grid-row: 3/4;
   }
 
   .g3 {
     grid-column: 5/6;
+    grid-row: 3/4;
   }
 
   .boxes {
@@ -281,15 +228,21 @@ import FooterComp from '../components/FooterComp.vue'
 }
 
 @media only screen and (max-width: 850px) {
+    .cereal {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
+      background-image: url('https://i.ibb.co/zGk5Vp3/Tablet-cereal.png');
+      background-position: center;
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
-
 
     .data p {
       font-size: 18px;
@@ -300,29 +253,25 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .grid {
-    grid-template-columns: auto 20px auto 20px auto;
-    margin-bottom: 20px;
+    grid-template-columns: auto 30px auto 30px auto;
+    grid-template-rows: auto 30px auto;
+    margin-bottom: 30px;
   }
 
   #video {
-    border-radius: 20px;
-  }
-
-  .grid img {
-    border-radius: 20px;
+    grid-column: 3/6;
   }
 
   .boxes {
-    border-radius: 20px;
+    margin-bottom: 60px;
   }
 
-
   .b1 {
-    margin: 40px 0;
+    margin: 60px 0;
   }
 
   .b3 {
-    margin: 40px 0;
+    margin: 60px 0;
   }
 }
 
@@ -330,11 +279,17 @@ import FooterComp from '../components/FooterComp.vue'
 
 @media only screen and (max-width: 650px)  {
   .cereal {
-    margin: 40px 7.3% 40px 7.3%;
+    margin: 20px 7.3% 40px 7.3%;
   }
 
   .main-img {
-    background-position: rigth;
+    height: 500px;
+    border-radius: 20px;
+  }
+
+  .info {
+    margin-bottom: 40px;
+    gap: 20px;
   }
 
   .data p {
@@ -345,17 +300,37 @@ import FooterComp from '../components/FooterComp.vue'
       font-size: 16px;
     }
 
+    .grid {
+      grid-template-columns: auto 20px auto 20px auto;
+    grid-template-rows: auto 20px auto;
+    margin-bottom: 20px;
+    }
+
+    .grid img {
+      border-radius: 20px;
+    }
+
+    #video {
+      grid-column: 1/6;
+      border-radius: 20px;
+    }
+
+    .boxes {
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+
+    .b1 {
+      margin: 40px 0;
+    }
+
+    .b3 {
+      margin: 40px 0;
+    }
+
   .arrow {
     font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 500px) {
-  
-  .main-img {
-    background-image: url('https://i.ibb.co/fDNj2Qj/cereal-mobile.png');
-    background-position: center;
-  }
-
-}
 </style>

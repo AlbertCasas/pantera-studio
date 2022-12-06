@@ -148,15 +148,20 @@ import FooterComp from '../components/FooterComp.vue'
   }
 
   @media only screen and (max-width: 850px) {
+    .pantera {
+      margin: 30px 7.3% 60px 7.3%;
+    }
+
     .main-img {
-      height: 900px;
-      border-radius: 20px;
+      height: 800px;
       background-image: url('https://i.ibb.co/rxPPCXm/tablet-pantera.png');
-      
+      margin-bottom: 30px;
     }
 
     .info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    justify-content: unset;
+    gap: 30px;
   }
 
     .data p {
@@ -167,8 +172,8 @@ import FooterComp from '../components/FooterComp.vue'
       font-size: 18px;
     }
 
-    .secondary-img img {
-      border-radius: 20px;
+    .secondary-img {
+      margin-bottom: 60px;
     }
 
     
@@ -176,9 +181,19 @@ import FooterComp from '../components/FooterComp.vue'
 
   @media only screen and (max-width: 650px) {
     .pantera {
-    margin: 40px 7.3% 40px 7.3%;
+    margin: 20px 7.3% 40px 7.3%;
   }
 
+  .main-img {
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .info {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
 
     .data p {
       font-size: 16px;
@@ -188,6 +203,13 @@ import FooterComp from '../components/FooterComp.vue'
       font-size: 16px;
     }
 
+    .secondary-img {
+      margin-bottom: 40px;
+    }
+
+    .secondary-img img {
+      border-radius: 20px;
+    }
 
     .arrow {
     font-size: 16px;

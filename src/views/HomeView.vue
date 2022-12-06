@@ -513,8 +513,10 @@ h2 {
 }
 @media only screen and (max-width: 850px) {
   .hero {
-    height: 450px;
+    height: 800px;
     border-radius: 20px;
+    margin: 30px 7.3% 60px 7.3%;
+    gap: 30px;
   }
 
 
@@ -558,7 +560,19 @@ h2 {
 .contact {
   font-size: 18px;
   height: 40px;
-  width: 180px;
+  width: 140px;
+}
+
+.work {
+  margin-bottom: 30px;
+}
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+.router {
+  margin-right: 30px;
 }
 
 .swiper-slide img {
@@ -566,7 +580,13 @@ h2 {
 }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
+
+  .hero {
+    height: 500px;
+    margin: 20px 7.3% 40px 7.3%;
+    gap: 20px
+  }
   
   .main {
     margin-left: 20px;
@@ -590,6 +610,14 @@ h2 {
 
   .contact {
   font-size: 16px;
+}
+
+.work {
+  margin-bottom: 20px;
+}
+
+.carousel {
+  margin-bottom: 40px;
 }
 
 .router {

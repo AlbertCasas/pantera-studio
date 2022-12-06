@@ -291,10 +291,11 @@ import FooterComp from '../components/FooterComp.vue'
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 850px) {
   .work {
   grid-template-columns: auto 30px auto;
   grid-template-rows: auto 30px auto 30px auto 30px auto;
+  margin: 60px 7.3% 60px 7.3%;
 }
 
 .r0 {
@@ -334,7 +335,7 @@ import FooterComp from '../components/FooterComp.vue'
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 550px) {
   .work {
   grid-template-columns: auto;
   grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto 20px auto;
