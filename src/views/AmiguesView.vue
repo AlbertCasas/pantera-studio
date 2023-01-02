@@ -58,7 +58,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     height: 800px;
     border-radius: 30px;
     background-image: url('https://i.ibb.co/z7f3g0S/Recurso-95-2x-1.png');
@@ -212,8 +212,8 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .main-img {
-      height: 800px;
-      margin-bottom: 30px;
+      height: 850px;
+      margin-bottom: 60px;
     }
 
     .info {
@@ -257,7 +257,7 @@ import FooterComp from '../components/FooterComp.vue'
     .main-img {
       height: 500px;
       border-radius: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .info {

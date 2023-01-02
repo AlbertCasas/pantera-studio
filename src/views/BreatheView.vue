@@ -49,7 +49,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     border-radius: 30px;
     height: 800px;
     background-image: url('https://i.ibb.co/tLgs9cx/Recurso-131.png');
@@ -192,10 +192,10 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .main-img {
-      height: 800px;
+      height: 850px;
       background-image: url('https://i.ibb.co/1RBPMpf/Recurso-129.png');
       background-position-y: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
 
     .info {
@@ -233,7 +233,7 @@ import FooterComp from '../components/FooterComp.vue'
   .main-img {
     height: 500px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .info {

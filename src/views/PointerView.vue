@@ -74,7 +74,7 @@ import FooterComp from "../components/FooterComp.vue";
 .main-img {
   width: 100%;
   height: 800px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   border-radius: 30px;
   background-image: url("https://i.ibb.co/d7XqF38/DESKTOP.png");
   background-position: center;
@@ -244,8 +244,9 @@ import FooterComp from "../components/FooterComp.vue";
     }
 
     .main-img {
-      height: 800px;
+      height: 850px;
       background-image: url('https://i.ibb.co/hHkqj7q/TABLET.png');
+      margin-bottom: 60px;
     }
 
     .info {
@@ -336,6 +337,7 @@ import FooterComp from "../components/FooterComp.vue";
       height: 500px;
       background-image: url('https://i.ibb.co/k14d9YX/MOBILE.png');
       border-radius: 20px;
+      margin-bottom: 40px;
     }
 
     .info {

@@ -77,7 +77,7 @@ import FooterComp from '../components/FooterComp.vue'
 
   .main-img {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     border-radius: 30px;
     height: 800px;
     background-image: url('https://i.ibb.co/XW1Fjbd/Recurso-99.png');
@@ -128,7 +128,7 @@ import FooterComp from '../components/FooterComp.vue'
   
     #video {
       width: 100%;
-      grid-column: 5/6;
+      grid-column: 3/4;
       grid-row: 1/2;
       border-radius: 30px;
       clip-path: inset(1px 1px);
@@ -233,9 +233,10 @@ import FooterComp from '../components/FooterComp.vue'
     }
 
     .main-img {
-      height: 800px;
+      height: 850px;
       background-image: url('https://i.ibb.co/zGk5Vp3/Tablet-cereal.png');
       background-position: center;
+      margin-bottom: 60px;
     }
 
     .info {
@@ -285,6 +286,7 @@ import FooterComp from '../components/FooterComp.vue'
   .main-img {
     height: 500px;
     border-radius: 20px;
+    margin-bottom: 40px;
   }
 
   .info {

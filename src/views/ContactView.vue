@@ -13,8 +13,8 @@
         </div>
       </div>
       <div class="text">
-        <p>Hi! If you have a project, collaboration or inquiry in mind that we can help you with, <br> <span>DROP US A LINE</span>.</p>
-        <p>If we can't, at least we'll point you in the right direction to the best of our knowledge. <br> <span>WE ARE KIND PEOPPLE</span>.</p>
+        <p>Hi! If you have a project, collaboration or inquiry in mind that we can help you with,  <span>DROP US A LINE</span>.</p>
+        <p>If we can't, at least we'll point you in the right direction to the best of our knowledge.  <span>WE ARE KIND PEOPLE</span>.</p>
         <p>hello.panterastudio@gmail.com</p>
         <p>+34 695 664 603</p>
         <p>Flos i Calcat, 17, 19-B <br>El Masnou, 08320 <br>Barcelona</p>
