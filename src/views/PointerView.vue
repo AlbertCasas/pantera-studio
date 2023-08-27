@@ -32,12 +32,12 @@
         </div>
       </div>
       <div class="img-grid">
-        <img src="../assets/imgs/POINTER/POINTER-1.png" alt="pointer" />
-        <img src="../assets/imgs/POINTER/POINTER-2.png" alt="pointer" />
-        <img src="../assets/imgs/POINTER/POINTER-3.png" alt="pointer" />
-        <img src="../assets/imgs/POINTER/POINTER-4.png" alt="pointer" />
-        <img src="../assets/imgs/POINTER/POINTER-5.png" alt="pointer" />
-        <img src="../assets/imgs/POINTER/POINTER-6.png" alt="pointer" />
+        <img src="../assets/imgs/POINTER/pointer-1.png" alt="pointer" />
+        <img src="../assets/imgs/POINTER/pointer-2.png" alt="pointer" />
+        <img src="../assets/imgs/POINTER/pointer-3.png" alt="pointer" />
+        <img src="../assets/imgs/POINTER/pointer-4.png" alt="pointer" />
+        <img src="../assets/imgs/POINTER/pointer-5.png" alt="pointer" />
+        <img src="../assets/imgs/POINTER/pointer-6.png" alt="pointer" />
       </div>
       <div class="img-small-grid">
         <img src="../assets/imgs/POINTER/pointer-7.png" alt="pointer" />
