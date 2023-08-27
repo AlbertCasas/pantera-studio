@@ -3,17 +3,16 @@
     <div class="navbar-content">
         <RouterLink class="pantera-logo" to="/"><img src="https://i.ibb.co/G9rzx4Y/positivo.png" alt="pantera-logo"></RouterLink>
         <div class="navbar-buttons">
-            <RouterLink class="button" to="/work">WORK</RouterLink>
-            <RouterLink class="button" to="/studio">STUDIO</RouterLink>
-            <RouterLink class="button" to="/contact">CONTACT</RouterLink>
+            <RouterLink class="button" to="/about">ABOUT</RouterLink>
+            <div class="navbar-buttons">
+        <a href="#footer" class="button">CONTACT</a>
+      </div>
         </div>
-        <HamburgerMenu />
     </div>
   </div>
 </template>
 
 <script setup>
-import HamburgerMenu from './HamburgerMenu.vue'
 
 </script>
 
@@ -42,15 +41,15 @@ import HamburgerMenu from './HamburgerMenu.vue'
 
 .navbar-buttons {
     display: flex;
-    gap: 80px;
+    gap: 64px;
     background-color: transparent;
 }
 
 .button {
     text-decoration: none;
     color: #0d0d0d;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .button:hover {
@@ -60,10 +59,20 @@ import HamburgerMenu from './HamburgerMenu.vue'
 .router-link-active {
     color: #E61933;
 }
+@media only screen and (max-width: 1000px) {
+    
+.button {
+    font-size: 16px;
+}
+}
 
 @media only screen and (max-width: 750px) {
-.navbar-buttons {
-    display: none;
+	.navbar-buttons {
+    gap: 32px;
+}
+	.button {
+    font-size: 16px;
+    font-weight: 900;
 }
 }
 

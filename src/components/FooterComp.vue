@@ -1,27 +1,29 @@
 <template>
   <div class="footer">
     <div class="footer-content">
-        <div class="navbar-buttons">
-            <RouterLink class="button" to="/work">WORK</RouterLink>
-            <RouterLink class="button" to="/studio">STUDIO</RouterLink>
-            <RouterLink class="button" to="/contact">CONTACT</RouterLink>
-            <div class="icons">
-                <a href="https://www.instagram.com/_panterastudio/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.behance.net/panterastudio" target="_blank" class="icon"><i class="fa-brands fa-behance"></i></a>
-                <a href="https://www.linkedin.com/in/pantera-studio-89866423b/" target="_blank" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        <RouterLink class="pantera-logo" to="/"><img src="https://i.ibb.co/P4kVGGW/negativo.png" alt="pantera-logo"></RouterLink>
+				<div class="footer-info">
+					<h1>MAIL</h1>
+					<p>hello.panterastudio@gmail.com</p>
+				</div>
+				<div class="footer-info">
+					<h1>PHONE</h1>
+					<p>+34 695 664 603</p>
+				</div>
+        <div class="footer-info">
+					<h1>SOCIAL MEDIA</h1>
+					<a href="https://www.instagram.com/_panterastudio/" target="_blank">Instagram</a>
+					<a href="https://www.behance.net/pantera_studio" target="_blank">Behance</a>
+				</div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
 
 </script>
 
-<style scoped>
-*{
+<style lang="scss" scoped>
+* {
     background-color: #0d0d0d;
 }
 
@@ -32,65 +34,64 @@
 }
 
 .footer-content {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    margin: 0 7.3%;
-    justify-content: space-between;
-    background-color: #0d0d0d;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	padding: 24px;
 }
 
-
-.pantera-logo img {
-    height: 60px;
-    background-color: #0d0d0d;
+.footer-info {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 900;
+	cursor: default;
+}
+p {
+	font-size: 24px;
+	font-weight: 500;
+	cursor: default;
 }
 
-.navbar-buttons {
-    display: flex;
-    gap: 80px;
-    align-items: center;
+a {
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+	text-decoration: none;
 }
 
-.button {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+@media only screen and (max-width: 1000px) {
+    
+h1 {
+	font-size: 16px;
+}
+p {
+	font-size: 16px;
 }
 
-.button:hover {
-    color: #E61933;
+a {
+	font-size: 16px;
 }
-
-.router-link-active {
-    color: #E61933;
-}
-
-.icon {
-    color: white;
-    font-size: 25px;
-}
-
-.icon i:hover {
-    color: #E61933;
-}
-
-.icons {
-    display: flex;
-    gap: 40px;
-}
-
-@media only screen and (max-width: 950px) {
-    .pantera-logo {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 750px) {
-    .footer {
-        display: none;
-    }
+h1 {
+	font-size: 16px;
+}
+p {
+	font-size: 16px;
+}
+
+a {
+	font-size: 16px;
+}
 }
 
 

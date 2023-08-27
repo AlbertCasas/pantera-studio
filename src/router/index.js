@@ -10,57 +10,49 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/work',
-      name: 'work',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/WorkView.vue')
-    },
-    {
-      path: '/studio',
-      name: 'studio',
+      path: '/about',
+      name: 'about',
       component: () => import('../views/StudioView.vue')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/ContactView.vue')
-    },
-    {
-      path: '/work/mobility',
+      path: '/mobility',
       name: 'mobility',
       component: () => import('../views/MobilityView.vue')
     },
     {
-      path: '/work/calxurro',
-      name: 'xurro',
+      path: '/calxurru',
+      name: 'xurru',
       component: () => import('../views/XurroView.vue')
     },
     {
-      path: '/work/mansamigues',
+      path: '/mansamigues',
       name: 'amigues',
       component: () => import('../views/AmiguesView.vue')
     },
     {
-      path: '/work/cerealbox',
+      path: '/magiccereal',
       name: 'cereal',
       component: () => import('../views/CerealView.vue')
     },
     {
-      path: '/work/breathe',
+      path: '/breathe',
       name: 'breathe',
       component: () => import('../views/BreatheView.vue')
     },
     {
-      path: '/work/pantera',
+      path: '/pantera',
       name: 'pantera',
       component: () => import('../views/PanteraView.vue'),
     },
     {
-      path: '/work/pointer',
+      path: '/pointer',
       name: 'pointer',
       component: () => import('../views/PointerView.vue')
+    },
+    {
+      path: '/lepetitbuda',
+      name: 'lepetitbuda',
+      component: () => import('../views/PetitBuda.vue')
     },
   ],
   scrollBehavior() {
