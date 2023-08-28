@@ -3,7 +3,7 @@
     <button class="arrow" @click="goToPath(leftPath)">
       <img src="@/assets/imgs/left-arrow.png" alt="left-arrow" />
     </button>
-    <button class="go-up"><a :href="goUpId">GO UP!</a></button>
+    <button class="go-up" @click="scrollToTop">GO UP!</button>
     <button class="arrow" @click="goToPath(rightPath)">
       <img src="@/assets/imgs/right-arrow.png" alt="right-arrow" />
     </button>
@@ -24,6 +24,12 @@ export default {
         this.$router.push(path);
       }
     },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>
@@ -31,10 +37,6 @@ export default {
 <style scoped>
 button {
   border: none;
-}
-a {
-  color: #0d0d0d;
-  text-decoration: none;
 }
 .arrow-wrapper {
   display: flex;
@@ -49,6 +51,7 @@ a {
 .go-up {
   font-size: 24px;
   font-weight: 900;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 750px) {
