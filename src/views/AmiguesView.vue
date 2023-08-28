@@ -61,33 +61,39 @@ import MovingArrows from "../components/MovingArrows.vue";
   gap: 16px;
 }
 
-.big-img {
-  width: calc(50% - 8px);
-  height: 100%;
-}
-
 .column-flex {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: calc(50% - 8px);
-  height: calc(50% - 8px);
-  flex: 1;
 }
 
-@media only screen and (max-width: 750px) {
+.big-img {
+  width: calc(50% - 8px);
+}
 
+.column-flex img {
+  width: 100%;
+  flex: 1; /* Distribute available height equally */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Adjust styles for smaller screens as needed */
+@media only screen and (max-width: 750px) {
   .flex-imgs {
     flex-direction: column-reverse;
     gap: 8px;
   }
+  .column-flex {
+    gap: 8px;
+    width: 100%;
+  }
+  .column-flex img {
+    height: 100%;
+  }
+
   .big-img {
   width: 100%;
-}
-  .column-flex {
-  gap: 8px;
-  width: 100%;
-  
 }
 }
 </style>

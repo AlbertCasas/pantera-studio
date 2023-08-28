@@ -34,7 +34,7 @@
       <div class="img-grid">
         <img src="../assets/imgs/BREATHE/breathe-1.png" alt="breathe" />
         <img src="../assets/imgs/BREATHE/breathe-2.png" alt="breathe" />
-        <img src="../assets/imgs/BREATHE/breathe-3.jpg" alt="breathe" />
+        <img src="../assets/imgs/BREATHE/breathe-3.png" alt="breathe" />
         <img src="../assets/imgs/BREATHE/breathe-4.jpg" alt="breathe" />
       </div>
       <img v-if="!isMobile" src="../assets/imgs/BREATHE/breathe-5.jpg" alt="breathe" />

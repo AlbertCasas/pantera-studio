@@ -3,17 +3,25 @@
     <NavBar />
     <div class="project-wrapper">
       <div class="project-header">
-        <video
-          class="video"
-          autoplay
-          muted
-          loop
-          id="video"
-          ref="video"
-          :srcObject.prop="video"
-        >
-          <source src="../assets/video/Cereal-AV.mp4" />
-        </video>
+        <div class="video-wrapper">
+          <video
+            class="video"
+            autoplay
+            muted
+            loop
+            id="video"
+            ref="video"
+            :srcObject.prop="video"
+          >
+            <source src="../assets/video/Cereal-AV.mp4" />
+          </video>
+          <div class="mute-unmute">
+            <button class="mute-button" @click="toggleMute">
+              <img v-if="isMuted" :src="Mute" alt="Unmute" />
+              <img v-else :src="Unmute" alt="Mute" />
+            </button>
+          </div>
+        </div>
         <div class="main-text">
           <h1 class="main-title">JUST FOR FUN!</h1>
           <p class="project-text">
@@ -43,9 +51,9 @@
         <img src="../assets/imgs/CEREAL/cereal-5.png" alt="cereal" />
         <img src="../assets/imgs/CEREAL/cereal-6.png" alt="cereal" />
       </div>
-    <img src="../assets/imgs/CEREAL/cereal-7.png" alt="cereal" />
-    <img src="../assets/imgs/CEREAL/cereal-8.png" alt="cereal" />
-    <img src="../assets/imgs/CEREAL/cereal-9.png" alt="cereal" />
+      <img src="../assets/imgs/CEREAL/cereal-7.png" alt="cereal" />
+      <img src="../assets/imgs/CEREAL/cereal-8.png" alt="cereal" />
+      <img src="../assets/imgs/CEREAL/cereal-9.png" alt="cereal" />
     </div>
     <MovingArrows
       :left-path="'/mansamigues'"
@@ -56,15 +64,63 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import NavBar from "../components/NavBar.vue";
 import FooterComp from "../components/FooterComp.vue";
 import MovingArrows from "../components/MovingArrows.vue";
+import Mute from "@/assets/imgs/mute.png";
+import Unmute from "@/assets/imgs/unmute.png";
+
+export default {
+  components: {
+    NavBar,
+    FooterComp,
+    MovingArrows,
+  },
+  data() {
+    return {
+      isMuted: true,
+      Mute: Mute,
+      Unmute: Unmute,
+    };
+  },
+  methods: {
+    toggleMute() {
+      const video = this.$refs.video;
+      this.isMuted = !this.isMuted;
+      video.muted = this.isMuted;
+    },
+  },
+};
 </script>
 
-<style scoped>
-.video {
+<style lang="scss" scoped>
+.video-wrapper {
   width: 45%;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+}
+
+.mute-unmute {
+  background-color: transparent;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 99;
+}
+
+.mute-button {
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  img {
+    width: 32px;
+    background-color: transparent;
+  }
+  
 }
 
 .img-grid {
@@ -79,22 +135,21 @@ import MovingArrows from "../components/MovingArrows.vue";
 }
 
 @media only screen and (max-width: 750px) {
-  .video {
+  .video-wrapper {
     width: 100%;
   }
+  .img-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-	.img-grid {
-  width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
-
-.img-small-grid {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
+  .img-small-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 </style>

@@ -3,18 +3,25 @@
     <NavBar />
     <div class="project-wrapper">
       <div class="project-header">
-        <video
-          class="video"
-          autoplay
-          :muted="isMuted"
-          loop
-          id="video"
-          ref="video"
-          :srcObject.prop="video"
-        >
-          <source src="../assets/video/pointer.mp4" />
-        </video>
-          <button @click="toggleMute">{{ isMuted ? 'Unmute' : 'Mute' }}</button>
+        <div class="video-wrapper">
+          <video
+            class="video"
+            autoplay
+            :muted="isMuted"
+            loop
+            id="video"
+            ref="video"
+            :srcObject.prop="video"
+          >
+            <source src="../assets/video/pointer.mp4" />
+          </video>
+          <div class="mute-unmute">
+            <button class="mute-button" @click="toggleMute">
+              <img v-if="isMuted" :src="Mute" alt="Unmute" />
+              <img v-else :src="Unmute" alt="Mute" />
+            </button>
+          </div>
+        </div>
         <div class="main-text">
           <h1 class="main-title">POINTER CRAFT BEER</h1>
           <p class="project-text">
@@ -60,6 +67,8 @@
 import NavBar from "../components/NavBar.vue";
 import FooterComp from "../components/FooterComp.vue";
 import MovingArrows from "../components/MovingArrows.vue";
+import Mute from "@/assets/imgs/mute.png";
+import Unmute from "@/assets/imgs/unmute.png";
 
 export default {
   components: {
@@ -69,7 +78,9 @@ export default {
   },
   data() {
     return {
-      isMuted: true, // Initially muted
+      isMuted: true,
+      Mute: Mute,
+      Unmute: Unmute,
     };
   },
   methods: {
@@ -82,9 +93,33 @@ export default {
 };
 </script>
 
-<style scoped>
-.video {
+<style lang="scss" scoped>
+.video-wrapper {
   width: 45%;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+}
+
+.mute-unmute {
+  background-color: transparent;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 99;
+}
+
+.mute-button {
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  img {
+    width: 32px;
+    background-color: transparent;
+  }
+  
 }
 
 .img-grid {
@@ -111,7 +146,7 @@ export default {
 }
 
 @media only screen and (max-width: 750px) {
-  .video {
+  .video-wrapper {
     width: 100%;
   }
 
