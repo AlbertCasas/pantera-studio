@@ -41,11 +41,10 @@
           <img src="../assets/imgs/MANSAMIGUES/mans-2.png" alt="mans" />
           <img src="../assets/imgs/MANSAMIGUES/mans-3.png" alt="mans" />
         </div>
-        <img src="../assets/imgs/MANSAMIGUES/mans-7.png" alt="mans" />
+        <img class="big-img" src="../assets/imgs/MANSAMIGUES/mans-4.png" alt="mans" />
       </div>
       <img src="../assets/imgs/MANSAMIGUES/mans-5.png" alt="mans" />
       <img src="../assets/imgs/MANSAMIGUES/mans-6.png" alt="mans" />
-      
     </div>
     <MovingArrows
       :left-path="'/calxurru'"
