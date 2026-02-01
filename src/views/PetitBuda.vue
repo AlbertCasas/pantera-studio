@@ -27,6 +27,14 @@
             values, highlighting the craftsmanship and creativity of the
             manufacturing process.
           </p>
+          <a
+            class="pdf-link"
+            href="/pdf/brand_guidelines_lpb.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CHECK THE BRAND GUIDELINES
+          </a>
         </div>
       </div>
       <img
@@ -144,5 +152,22 @@ export default {
   .video {
     width: 100%;
   }
+}
+.pdf-link {
+  display: block;
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+  color: #e61933;
+  }
+}
+
+.pdf-link:hover {
+  text-decoration: none;
 }
 </style>

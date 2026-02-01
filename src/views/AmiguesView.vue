@@ -26,6 +26,14 @@
             Together with a turquoise as their main color, we aimed for a clean
             and calming feel through their image.
           </p>
+          <a
+            class="pdf-link"
+            href="/pdf/brand_guidelines_ma.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Check the brand guidelines
+          </a>
         </div>
       </div>
       <div class="flex-imgs">
@@ -33,10 +41,11 @@
           <img src="../assets/imgs/MANSAMIGUES/mans-2.png" alt="mans" />
           <img src="../assets/imgs/MANSAMIGUES/mans-3.png" alt="mans" />
         </div>
-        <img class="big-img" src="../assets/imgs/MANSAMIGUES/mans-4.png" alt="mans" />
+        <img src="../assets/imgs/MANSAMIGUES/mans-7.png" alt="mans" />
       </div>
       <img src="../assets/imgs/MANSAMIGUES/mans-5.png" alt="mans" />
       <img src="../assets/imgs/MANSAMIGUES/mans-6.png" alt="mans" />
+      
     </div>
     <MovingArrows
       :left-path="'/calxurru'"
@@ -95,5 +104,22 @@ import MovingArrows from "../components/MovingArrows.vue";
   .big-img {
   width: 100%;
 }
+}
+.pdf-link {
+  display: block;
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+  color: #e61933;
+  }
+}
+
+.pdf-link:hover {
+  text-decoration: none;
 }
 </style>
