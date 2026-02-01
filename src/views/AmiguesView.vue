@@ -45,6 +45,7 @@
       </div>
       <img src="../assets/imgs/MANSAMIGUES/mans-5.png" alt="mans" />
       <img src="../assets/imgs/MANSAMIGUES/mans-6.png" alt="mans" />
+      <img src="../assets/imgs/MANSAMIGUES/mans-7.jpg" alt="mans" />
     </div>
     <MovingArrows
       :left-path="'/calxurru'"
